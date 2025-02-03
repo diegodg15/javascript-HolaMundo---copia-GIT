@@ -1,11 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./favicon/images.png">
     <title>Document</title>
 </head>
-<body>
-    
+
+<body
+    style="width: 90%; margin:auto; border: 1px solid red; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    <section>
+        <h1 style="text-align: center;">JS</h1>
+        <div>
+            <h1 id="saludoH1"></h1>
+            <button onclick="funcionSaludo()">Click aquí</button>
+            <script>
+                function funcionSaludo() {
+                    let saludoVar = "Hola";
+                    document.getElementById("saludoH1").innerHTML = saludoVar;
+                }
+            </script>
+        </div>
+    </section>
 </body>
+
 </html>
