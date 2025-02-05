@@ -13,3 +13,9 @@ while(incremento < 5){
  incremento++;
  console.log(incremento);
 }
+
+
+//Árbol de navidad mitad.
+for(let arbol = "#"; arbol.length < 8; arbol +="#"){
+    console.log(arbol);
+}
