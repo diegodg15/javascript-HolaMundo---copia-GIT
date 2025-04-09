@@ -93,3 +93,24 @@ console.log(country);  //  ->  Malawi
 console.log(typeof  country);  //  ->  string
 console.log(continent);  //  ->  Africa
 console.log(typeof  continent);  //  ->  string
+
+let  message1  =  "The  vessel  'Mars'  called  at  the  port.";
+let  message2  =  'Cyclone  "Cilida"  to  pass  close  to  Mauritius.';
+   
+console.log(message1);  //  ->  The  vessel  'Mars'  called  at  the  port.
+console.log(message2);  //  ->  Cyclone  "Cilida"  to  pass  close  to  Mauritius.
+
+let  message3  =  'The  vessel  \'Mars\'  called  at  the  port.';
+let  message4  =  "Cyclone  \"Cilida\"  to  pass  close  to  Mauritius.";
+   
+console.log(message1);  //  ->  The  vessel  'Mars'  called  at  the  port.
+console.log(message2);  //  ->  Cyclone  "Cilida"  to  pass  close  to  Mauritius.
+   
+let  path  =  "C:\\Windows";
+console.log(path);  //  ->  C:\Windows
+
+//Árbol de navidad a l amitad
+let hoja = "#"
+
+for(hoja ; hoja.length <= 8 ; hoja+="#")
+    console.log(hoja);
