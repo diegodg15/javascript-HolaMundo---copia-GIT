@@ -16,6 +16,10 @@ while(incremento < 5){
 
 
 //Árbol de navidad mitad.
+/*
+El operador de asignación, "+=" actua de lasiguiente manera:
+arbol+="#" --> arbol = arbol + "#"
+*/
 for(let arbol = "#"; arbol.length < 8; arbol +="#"){
     console.log(arbol);
 }
