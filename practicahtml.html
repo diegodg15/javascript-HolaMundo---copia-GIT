@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="./favicon/images.png">
-        <title>HTML5</title>
-    </head>
-    <body>
-        <h1>Practicando HTML5</h1>
-        <p>Este es el primer párrafo</p>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./favicon/images.png">
+    <title>HTML5</title>
+</head>
+
+<body>
+    <h1>Practicando HTML5</h1>
+    <p>Este es el primer párrafo</p>
+    <button id="click">click aquí</button>
+    <a href="about.html">link sobre mi</a>
+    <img src="./images.jpg" alt="montaña" width="500 px" height="500 px" loading="lazy">
+
+    <footer>&copy</footer>
+</body>
+<script>
+    function cambiarColorFondo() {
+        // Obtener el color real del fondo
+        const colorActual = getComputedStyle(document.body).backgroundColor;
+
+        if (colorActual === "rgb(255, 0, 0)") { // rojo
+            document.body.style.backgroundColor = "white";
+        } else {
+            document.body.style.backgroundColor = "red";
+        }
+    }
+
+    document.getElementById("click").addEventListener("click", cambiarColorFondo);
+</script>
+
+
 
 </html>
