@@ -1,4 +1,19 @@
-let hojaArbol= "#";
+let hojaArbol = "#";
 
-for(hojaArbol;hojaArbol.length<=10;hojaArbol +="#") //+= es lo mismo que hojaArbol= hojaArbol +"#".
-console.log(hojaArbol);
+for (hojaArbol; hojaArbol.length <= 10; hojaArbol += "#") //+= es lo mismo que hojaArbol= hojaArbol +"#".
+    console.log(hojaArbol);
+
+
+//FIZZ BUZZ
+for (let n = 1; n <= 100; n++) {
+    let palabra = "";
+    if (n % 2 == 0) {
+        palabra += "FIZZ";
+    }
+    if (n % 3 == 0) {
+        palabra += "BUZZ";
+    }
+
+    console.log(palabra.length > 0 ? palabra : n);
+
+}
