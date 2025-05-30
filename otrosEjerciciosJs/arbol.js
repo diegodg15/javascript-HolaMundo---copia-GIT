@@ -21,6 +21,7 @@ for (let n = 1; n <= 100; n++) {
 //INTEPOLACIÓN
 const nombre = "Diego";
 const edad = 24;
-
+{
 let mensaje = `Mi nombre es ${nombre} y mi tengo ${edad} años`;
 console.log(mensaje);
+}
