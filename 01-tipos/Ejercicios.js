@@ -57,9 +57,18 @@ console.log("Lirio" , "precio unitario:" + lirio + "cantidad:" + cantLirio + "va
 console.log("Tulipan" , "precio unitario:" + tulipan + "cantidad:" + cantTulipan + "valor:" + precioTotalTulipan)
 console.log("El precio total es: ", precioTotalFlores);
 
+cantRosa-=20; //cantRosa = cantRosa - 20;
+cantLirio-=30;
+console.log(cantRosa);
+precioTotalRosa = rosa * cantRosa;
+precioTotalRosa = rosa * cantRosa;
+precioTotalLirio = lirio * cantLirio;
+precioTotalTulipan = tulipan * cantTulipan;
 
-
-
+console.log("Rosa", "precio unitario:" + rosa + "cantidad:" + cantRosa +"valor:" + precioTotalRosa)
+console.log("Lirio" , "precio unitario:" + lirio + "cantidad:" + cantLirio + "valor:" + precioTotalLirio)
+console.log("Tulipan" , "precio unitario:" + tulipan + "cantidad:" + cantTulipan + "valor:" + precioTotalTulipan)
+console.log("El precio total es: ", precioTotalFlores);
 //Ejercicio N°1:
 //Ejercicio N°1:
 //Ejercicio N°1:
