@@ -77,6 +77,7 @@ personas usando los datos que se muestran en la tabla a continuación.
 En el resto del curso, volverás a este script y lo ampliarás sistemáticamente con nuevas funciones, 
  utilizando los elementos de JavaScript recién aprendidos. */
 
+ //En vez de utilizar 9 variables, mejor utilizar un array por cada variable de persona.
 let persona1 = ["Maxwell Wright", "01917196495", "Curabitur.egestas.nuc@nonummyac.co.uk"]
 let persona2 = ["Raja Villareal", "08663982895", "pusuere.vulputatesed.com"]
 let persona3 = ["Helen Richards", "08001111", "libero@convallis.edu"]
