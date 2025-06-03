@@ -3,6 +3,10 @@ let nombreCompleto;//camelCase
 let NombreCompleto;//UpperCamelCase / PascalCase
 let nombre_completo;//snake_case
 
+let num = 2, num2= 3, num3= 4
+console.log(num, num2, num3)//2 3 4
+
+
 //Tipos de Variables:
 
 var nombre1;//Variable global

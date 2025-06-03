@@ -12,6 +12,7 @@ let personaje = {//Objeto literal
 console.log(personaje);
 console.log(personaje.nombre);
 console.log(personaje ["nombrePelicula"]);
+console.log(`La edad es ${personaje["edad"]}`)
 
 //Cambiar porpiedad a objeto
 
