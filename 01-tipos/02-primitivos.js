@@ -92,3 +92,21 @@ let nulo = null;//null
  * 
  */
 
+//BigInt
+
+let numeroSuma1 = 7n, numeroSuma2 = 4n; //Cuando tiene n es del tipo Bigint 
+let resultado = numeroSuma1 / numeroSuma2;
+console.log(`El resultado es ${resultado}`); //1
+
+//---------------------------------------------------
+//Bigint
+
+let big = 1234567890000000000000n;
+let big2 = 1n;
+
+console.log(big);  //  ->  1234567890000000000000n
+console.log(typeof big);  //  ->  bigint
+
+console.log(big2);  //  ->  1n
+console.log(7n / 4n);  //  ->  1n en esta división, devuelve el número entero, no los decimales.
+
