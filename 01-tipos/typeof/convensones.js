@@ -15,3 +15,20 @@ class AutoDeportivo {
     this.modeloAuto = modelo;
 }
 }
+/**
+ * Se utiliza para declarar clases y constructores. Esto es de POO.
+ */
+
+//UPPER_SNAKE_CASE
+
+const NUMERO_PI = 3.14;
+/**
+ * Se utiliza para declarar constantes globales o inmutables.
+ */
+
+//kebap-case / lowercase / snake_case
+
+let nombre_de_archivos;
+/**
+ * Se utiliza para nombrar archivos.
+ */
