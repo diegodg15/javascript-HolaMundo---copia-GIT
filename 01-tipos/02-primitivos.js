@@ -125,8 +125,8 @@ let nulo = null;//null
  */
 
 //AutoBoxing:
-let  river  =  "Mekong";
-let  character  =  river.charAt(2);
+let river = "Mekong";
+let character = river.charAt(2);
 console.log(character);  //  ->  k
 
 /*Cuando queremos acceder a métodos de datos primitivos, el interprete de js 
@@ -139,6 +139,20 @@ let temporal = new String(river2);
 let letra = temporal.charAt(2);
 console.log(letra);
 
+//Metodos string
+let str = "java  script  language";
+
+console.log(str.length);  //  ->  20
+console.log('test'.length);  //  ->  4
+
+console.log(str.charAt(0));  //  ->  'j'
+console.log('abc'.charAt(1));  //  ->  'b'
+
+console.log(str.slice(0, 4));  //  ->  'java'
+console.log('test'.slice(1, 3));  //  ->  'es'
+
+console.log(str.split('  '));  //  ->  ['java',  'script',  'language']
+console.log('192.168.1.1'.split('.'));    //  ->  ['192',  '168',  '1',  '1']
 
 
 //BigInt
