@@ -22,6 +22,25 @@ for (let n = 1; n <= 100; n++) {
 const nombre = "Diego";
 const edad = 24;
 {
-let mensaje = `Mi nombre es ${nombre} y mi tengo ${edad} años`;
-console.log(mensaje);
+    let mensaje = `Mi nombre es ${nombre} y mi tengo ${edad} años`;
+    console.log(mensaje);
 }
+
+
+//Tablero de ajedrez
+let size = 8;
+
+let board = "";
+
+for (let y = 0; y < size; y++) {
+    for (let x = 0; x < size; x++) {
+        if ((x + y) % 2 == 0) {
+            board += " ";
+        } else {
+            board += "#";
+        }
+    }
+    board += "\n";
+}
+
+console.log(board);
