@@ -15,8 +15,7 @@ console.log(false);  //  ->  false
 console.log(typeof false);  //  ->  boolean
 console.log(isDataValid);  //  ->  true
 console.log(typeof isDataValid);  //  ->  boolean
-//-------------------------------------------
-
+//---------------------------------------------------
 
 
 //>>>>>>>>>>TIPO DE DATO NUMBER<<<<<<<<<<
@@ -67,7 +66,6 @@ console.log(typeof n);  //  ->  number
 //---------------------------------------------------
 
 
-
 //>>>>>>>>>>TIPO DE DATO BIGINT<<<<<<<<<<
 let big = 1234567890000000000000n;
 let big2 = 1n;
@@ -78,16 +76,16 @@ console.log(typeof big);  //  ->  bigint
 console.log(big2);  //  ->  1n
 console.log(7n / 4n);  //  ->  1n en esta división, devuelve el número entero, no los decimales.
 
-let  big3  =  1000n  +  20;  
+let big3 = 1000n + 20;
 //  ->  Uncaught  TypeError:  Cannot  mix  BigInt  and  other  types,  use  explicit  conversions
 
-let  big4  =  1000n  /  0n;  //  ->  Uncaught  RangeError:  Division  by  zero
+let big4 = 1000n / 0n;  //  ->  Uncaught  RangeError:  Division  by  zero
 
 let numeroSuma1 = 7n, numeroSuma2 = 4n; //Cuando tiene n es del tipo Bigint 
 let resultado = numeroSuma1 / numeroSuma2;
 console.log(`El resultado es ${resultado}`); //1
-console.log(typeof(resultado))//BigInt
-//----------------------------------------------------------------
+console.log(typeof (resultado))//BigInt
+//---------------------------------------------------
 
 
 //>>>>>>>>>>TIPO DE DATO STRING<<<<<<<<<<
@@ -98,8 +96,8 @@ console.log(typeof country);  //  ->  string
 console.log(continente);  //  ->  Africa
 console.log(typeof continente);  //  ->  string
 
-let mensaje01 = "El barco “Marte” hizo escala en el puerto.";
-let message02 = 'El ciclón "Cilida" pasará cerca de Mauricio.';
+let mensaje1 = "El barco “Marte” hizo escala en el puerto.";
+let mensaje2 = 'El ciclón "Cilida" pasará cerca de Mauricio.';
 console.log(mensaje1);  //  ->  El barco “Marte” hizo escala en el puerto.
 console.log(mensaje2);  //  ->  El ciclón "Cilida" pasará cerca de Mauricio.
 
@@ -111,71 +109,79 @@ console.log(mensajeNuevo2);  //  ->  El ciclón "Cilida" pasará cerca de Mauric
 let path1 = "C:\\Windows";
 console.log(path1);  //  ->  C:\Windows
 
-//Metodos string:
-let str = "java  script  language";
-
-console.log(str.length);  //  ->  20
-console.log('test'.length);  //  ->  4
-
-console.log(str.charAt(0));  //  ->  'j'
-console.log('abc'.charAt(1));  //  ->  'b'
-
-console.log(str.slice(0, 4));  //  ->  'java'
-console.log('test'.slice(1, 3));  //  ->  'es'
-
-console.log(str.split('  '));  //  ->  ['java',  'script',  'language']
-console.log('192.168.1.1'.split('.'));    //  ->  ['192',  '168',  '1',  '1']
-
-//AutoBoxing:
-let river = "Mekong";
-let character = river.charAt(2);
-console.log(character);  //  ->  k
-
-/*Cuando queremos acceder a métodos de datos primitivos, el interprete de js 
-*convierte el dato primitivo a un objeto temporalmente.
-*Los tipod des datos tienen metodos que están presentes en el tipo de esa clase,
-*por ejemplo let saludo "hola"; -> saludo = clase string, string tiene el método .characterAt();
-*/
-let river2 = "Mekong"; //Dato literal
-let temporal = new String(river2);
-let letra = temporal.charAt(2);
-console.log(letra);
-//--------------------------------------------------------
-
-
-
-//>>>>>>>>>>TIPO DE DATO UNDEFINED<<<<<<<<<<
-
-
-
-//Conversión (casting) String a numero:
-let numeroUno = Number("2");
-let numeroDos = parseInt("2");
-let suma = "2" + "2";
-let suma2 = numeroUno + numeroDos;
-console.log(suma)
-console.log(suma2)
-
-let numeroDosParse = parseInt("24n4"); // Parse Int convierte el primer numero o cadena de numeros, ignorando lo demás.
-
-
-let path = "C:\\Windows" - "Windows";
-console.log(path);  //  ->  NaN
+let path2 = "C:\\Windows" - "Windows";
+console.log(path2);  //  ->  NaN
 
 let test = "100" - "10";
 console.log(test);  //  ->  90
 console.log(typeof test);  //  ->  number
 
-
-let path2 = "C:\\" + "Windows";
-console.log(path);  //  ->  C:\Windows
+let path3 = "C:\\" + "Windows";
+console.log(path3);  //  ->  C:\Windows
 
 let test2 = "100" + "10";
-console.log(test);  //  ->  10010
+console.log(test2);  //  ->  10010
 console.log(typeof test2);  //  ->  string
 
-//La conversion aplica a todas las operaciones aritméticas, con
-//excepción de la suma "+".
+let country = "Malawi";
+let continent = "Africa";
+
+let sentence = `  ${country}  is  located  in  ${continent}.`;
+console.log(sentence);  //  ->  Malawi  is  located  in  Africa.
+
+console.time();
+console.log("test  console");  //  ->  test  console
+console.timeEnd();  //  ->  default:  0.108154296875  ms
+
+console.time("timepoRespuesta");
+//Aquí va un fragmento de código.
+console.timeEnd("tiempoRespuesta");
+
+//Metodos string:
+let str = "java  script  language";
+
+//Calcular tamño del string
+console.log(str.length);  //  ->  20
+console.log('test'.length);  //  ->  4
+
+//Devuelve el caracter de la posición 
+console.log(str.charAt(0));  //  ->  'j'
+console.log('abc'.charAt(1));  //  ->  'b'
+
+//Devueve una cadena según el rango especificado
+console.log(str.slice(0, 4));  //  ->  'java'
+console.log('test'.slice(1, 3));  //  ->  'es'
+
+//Divide la cadena en subcadenas siempre que se encuentre un separador
+console.log(str.split('  '));  //  ->  ['java',  'script',  'language']
+console.log('192.168.1.1'.split('.'));    //  ->  ['192',  '168',  '1',  '1']
+
+//AutoBoxing:
+/*Cuando queremos acceder a métodos de datos primitivos, el interprete de js 
+*convierte el dato primitivo a un objeto temporalmente.
+*Los tipod des datos tienen metodos que están presentes en el tipo de esa clase,
+*por ejemplo let saludo "hola"; -> saludo = clase string, string tiene el método .characterAt();
+*/
+//Ejemplo:
+let texto = "Salu2";
+//El interprete lo convierte a objeto
+let temporal1 = new String(texto); 
+
+let river = "Mekong";
+let character = river.charAt(2);
+console.log(character);  //  ->  k
+
+//Esto ^ lo convierte en un objeto temporal
+let river2 = "Mekong"; //Dato literal
+let temporal = new String(river2);
+let letra = temporal.charAt(2);
+console.log(letra);
+//---------------------------------------------------
+
+
+//>>>>>>>>>>TIPO DE DATO UNDEFINED<<<<<<<<<<
+
+
 
 
 
@@ -187,15 +193,14 @@ let noDefinido;
 let undef = undefined;//Undefined : valor o tipo.
 let nulo = null;//null
 /**
- * 
- * 
+ *
+ *
  */
 
 
 
 //---------------------------------------------------
 
-//>>>>>>>>>>TIPO DE DATO BigInt<<<<<<<<<<
 
 
 

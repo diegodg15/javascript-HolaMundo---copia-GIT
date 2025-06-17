@@ -1,3 +1,4 @@
+/**BUCLES */
 let resultado = 1;
 let contador;
 

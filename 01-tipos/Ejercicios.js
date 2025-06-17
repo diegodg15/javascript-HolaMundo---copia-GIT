@@ -15,6 +15,8 @@ do {
   nombre = prompt("Ingresa tu nombre")
 } while (!nombre)//Primero es true si ingresamos algo, pero el operador ! lo cambia a false para salir del bucle. Caso contrario,
 console.log(typeof nombre + " " + nombre);//si ingresamos un valor null, lotoma como false pero el operador ! lo cambia a true para seguir en el bucle.
+//---------------------------------------------------
+
 
 //Ejercicio N°2: Imprimir solo el numero 3 de una sucesión numérica.
 for (let i = 0; i < 10; i++) {
@@ -25,12 +27,16 @@ for (let i = 0; i < 10; i++) {
   }
 
 }
+//---------------------------------------------------
+
 
 //Ejercicio N°3:
 let numero3;
 for (numero3 = 0; numero < 12; numero3 += 2) {
   console.log(numero3);
 }
+//---------------------------------------------------
+
 
 //Ejercicio N°4:  Declara seis variables y recuerda nombrarlas según su propósito:
 /*
@@ -69,6 +75,8 @@ console.log("Rosa", "precio unitario:" + rosa + "cantidad:" + cantRosa + "valor:
 console.log("Lirio", "precio unitario:" + lirio + "cantidad:" + cantLirio + "valor:" + precioTotalLirio)
 console.log("Tulipan", "precio unitario:" + tulipan + "cantidad:" + cantTulipan + "valor:" + precioTotalTulipan)
 console.log("El precio total es: ", precioTotalFlores);
+//---------------------------------------------------
+
 
 //Ejercicio N°5:
 /*Nuestra tarea consistirá en crear una lista de contactos. 
@@ -85,7 +93,7 @@ let persona3 = ["Helen Richards", "08001111", "libero@convallis.edu"]
 console.log(persona2)
 console.log(persona3)
 console.log(persona4)
-
+//---------------------------------------------------
 
 
 //Ejercicio N°1:
