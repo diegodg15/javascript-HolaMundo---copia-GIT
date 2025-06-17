@@ -1,0 +1,19 @@
+// AND OR NOT
+
+//AND &&
+console.log(true && true);//True
+console.log(true && false);//False
+
+
+let mayorEdad = true;
+let suscrito = true;
+console.log("operador and", mayorEdad && suscrito);
+
+//OR ||
+console.log("operador or", mayorEdad || suscrito);//Devolver true si es que al menos uno de estos dos es true.
+//PAra que devuelva false, los dos parametros deben ser false.
+
+//NOT !
+console.log("operador not", !mayorEdad);//Este operador invierte el true;
+
+let soloCatalogoInfantil =!mayorEdad;
