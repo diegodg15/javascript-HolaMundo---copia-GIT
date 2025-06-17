@@ -1,3 +1,5 @@
+//TIPADO DINÁMICO
+
 let numero =32;
 let nombre = "Felipe"
 let verdadero = true;
