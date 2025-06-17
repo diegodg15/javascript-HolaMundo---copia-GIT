@@ -136,7 +136,7 @@ console.timeEnd();  //  ->  default:  0.108154296875  ms
 console.time("timepoRespuesta");
 //Aquí va un fragmento de código.
 console.timeEnd("tiempoRespuesta");
-
+//---------------------------------------------------
 //Metodos string:
 let str = "java  script  language";
 
@@ -155,7 +155,7 @@ console.log('test'.slice(1, 3));  //  ->  'es'
 //Divide la cadena en subcadenas siempre que se encuentre un separador
 console.log(str.split('  '));  //  ->  ['java',  'script',  'language']
 console.log('192.168.1.1'.split('.'));    //  ->  ['192',  '168',  '1',  '1']
-
+//---------------------------------------------------
 //AutoBoxing:
 /*Cuando queremos acceder a métodos de datos primitivos, el interprete de js 
 *convierte el dato primitivo a un objeto temporalmente.
@@ -165,7 +165,7 @@ console.log('192.168.1.1'.split('.'));    //  ->  ['192',  '168',  '1',  '1']
 //Ejemplo:
 let texto = "Salu2";
 //El interprete lo convierte a objeto
-let temporal1 = new String(texto); 
+let temporal1 = new String(texto);
 
 let river = "Mekong";
 let character = river.charAt(2);
@@ -180,9 +180,62 @@ console.log(letra);
 
 
 //>>>>>>>>>>TIPO DE DATO UNDEFINED<<<<<<<<<<
+let declaredVar;
+console.log(typeof declaredVar);  //  ->  undefined
+
+declaredVar = 5;
+console.log(typeof declaredVar);  //  ->  number
+
+declaredVar = undefined;
+console.log(typeof declaredVar);  //  ->  undefined
+
+//El valor indefinido también puede ser devuelto por el operador typeof cuando se utiliza una variable inexistente como argumento.
+Console.log(typeof notDeclaredVar);  //  ->  undefined
+console.log(notDeclaredVar);  //  ->  Uncaught  ReferenceError:  notDeclared  is  not  defined
+//---------------------------------------------------
 
 
+//>>>>>>>>>>TIPO DE DATO SYMBOL<<<<<<<<<<
 
+const simbolo1 = Symbol("id");
+const simbolo2 = Symbol("id");
+console.log(simbolo1 === simbolo2); // false 
+//Cada Symbol() es único, inmutable
+
+//No se auto-convierte
+const sym = Symbol();
+console.log("Símbolo: " + sym); //TypeError
+
+//Creación:
+// Sin descripción
+const simboloNuevo1 = Symbol();
+
+// Con descripción (útil para depuración)
+const simboloNuevo2 = Symbol("descripción");
+
+//Casos de uso:
+//Claves únicas en objetos:
+const ID = Symbol("id");
+const usuario = {
+    nombre: "Ana",
+    [ID]: "abc123" // Clave no enumerable
+};
+
+console.log(usuario[ID]); // "abc123"
+console.log(Object.keys(usuario)); // ["nombre"] → ¡No aparece el Symbol!
+
+//Evitar colisiones:
+// Biblioteca externa
+Array.prototype.iterar = function() {  };
+
+// Tu código: ¡Sin riesgo de sobrescribir!
+Array.prototype[Symbol.iterator] = function*() { 
+  // Implementación personalizada
+};
+
+//NO son Instanciables:
+new Symbol(); //TypeError: Symbol no es constructor
+//---------------------------------------------------
 
 
 
