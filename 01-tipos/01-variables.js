@@ -47,6 +47,12 @@ console.log("La variable es : " + variableDeImpresion);//Concatenación
 console.log("La variable es : ", variableDeImpresion);
 console.log("La variable es : ", variableDeImpresion, "más texto");
 
+//Si es un objeto:
+console.log(nombreObjeto["atributo"]);
+console.log(nombreObjeto.atributo);
+console.log(`El objeto es : ${nombreObjeto["atributo"]}`);
+
+
 //>>>>>>>>>>SOMBREADO DE VARIABLES/SHADOWING<<<<<<<<<<
 /**Sombreado de variable: declarar una variable global y local con el mismo nombre. */
 let contador = 100;

@@ -196,7 +196,6 @@ console.log(notDeclaredVar);  //  ->  Uncaught  ReferenceError:  notDeclared  is
 
 
 //>>>>>>>>>>TIPO DE DATO SYMBOL<<<<<<<<<<
-
 const simbolo1 = Symbol("id");
 const simbolo2 = Symbol("id");
 console.log(simbolo1 === simbolo2); // false 
@@ -220,7 +219,6 @@ const usuario = {
     nombre: "Ana",
     [ID]: "abc123" // Clave no enumerable
 };
-
 console.log(usuario[ID]); // "abc123"
 console.log(Object.keys(usuario)); // ["nombre"] → ¡No aparece el Symbol!
 
@@ -238,13 +236,16 @@ new Symbol(); //TypeError: Symbol no es constructor
 //---------------------------------------------------
 
 
+//>>>>>>>>>>TIPO DE DATO NULL<<<<<<<<<<
+let nulo = null;//null
 
-
-
+someResource = null;
+console.log(someResource); // -> null
+console.log(typeof someResource); // -> object
 
 let noDefinido;
 let undef = undefined;//Undefined : valor o tipo.
-let nulo = null;//null
+
 /**
  *
  *

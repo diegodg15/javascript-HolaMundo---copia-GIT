@@ -1,4 +1,28 @@
 /**CONVERSIÓN TIPOS */
+
+//Funciones constructoras / Funciones de construcción primitivas:
+/*
+Usar literales no es la única forma de crear variables de los tipos primitivos dados. 
+La segunda opción es crearlas mediante funciones constructoras . 
+Las siguientes funciones devolverán primitivas de un tipo dado: Boolean, Number, BigInt, y String.
+*/
+const str = String();
+const num = Number();
+const bool = Boolean();
+
+console.log(str);  //  ->
+console.log(num);  //  ->  0
+console.log(bool);  //  ->  false
+
+const big1 = BigInt(42);
+console.log(big1);  //  ->  42n
+
+const big2 = BigInt();      //  ->  Uncaught  TypeError:  Cannot  convert  undefined  to  a  BigInt
+//Estas funciones las usamos en conversiones de tipos.
+
+
+//>>>>>>>>>>CONVERSIONES DE TIPOS DE DATOS<<<<<<<<<<
+
 //Conversión (casting) String a numero:
 let numeroUno = Number("2");
 let numeroDos = parseInt("2");
