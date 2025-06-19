@@ -12,8 +12,8 @@ let nombre_completo;//snake_case
 const VALOR_DE_PI = 3.14;
 
 //PascalCase/UpperCamelCase: clases y constructores.
-class TrianguloRectangulo{
-    constructor (alto, ancho){
+class TrianguloRectangulo {
+    constructor(alto, ancho) {
         this.alto = alto;
         this.ancho = ancho;
     }
@@ -32,7 +32,7 @@ var nombre1;
 let nombre2;
 
 //Variable CONST: scope block 
-const nombre3 =2; 
+const nombre3 = 2;
 
 /*
 let num = 2, num2= 3, num3= 4
@@ -46,6 +46,14 @@ console.log(`La variable es ${variableDeImpresion}`);//Interpolación
 console.log("La variable es : " + variableDeImpresion);//Concatenación
 console.log("La variable es : ", variableDeImpresion);
 console.log("La variable es : ", variableDeImpresion, "más texto");
+
+//Ejemplo imprsión console.log();
+let str2 = "text";
+let strStr = String(str2);
+console.log(`${typeof str2} : ${str2}`);
+console.log(typeof str2 , str2);
+console.log(typeof str2 + " " + str2);
+
 
 //Si es un objeto:
 console.log(nombreObjeto["atributo"]);
