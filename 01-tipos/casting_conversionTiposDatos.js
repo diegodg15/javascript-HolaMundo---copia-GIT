@@ -11,8 +11,8 @@ const num = Number();
 const bool = Boolean();
 
 console.log(str);  //  ->
-console.log(num);  //  ->  0
 console.log(bool);  //  ->  false
+console.log(num);  //  ->  0
 
 let funcionString = String("Saludos");
 console.log(funcionString);//Saludos
@@ -37,7 +37,13 @@ const strFromBool = String(true);
 console.log(typeof strFromBool, strFromBool)//String True
 
 const numFromStr = Number("312");
-console.log(typeof numFromStr, numFromStr)//NUmber 312
+console.log(typeof numFromStr, numFromStr)//Number 312
+
+//ParseINt
+const numFromStr5 = String("312");
+console.log(typeof numFromStr5, numFromStr5)//String 312
+const NUMERO_PARSEINT = parseInt(numFromStr5)
+console.log(typeof NUMERO_PARSEINT, numFromStr5)//Number 312
 
 const boolFromNumber = Boolean(0);
 console.log(typeof boolFromNumber, boolFromNumber)//Boolean false
@@ -45,7 +51,7 @@ console.log(typeof boolFromNumber, boolFromNumber)//Boolean false
 
 
 //>>>>>>>>>>CONVERSIONES DE TIPOS DE DATOS<<<<<<<<<<
-//COnversión de String:
+//COnversión de STRING:
 let str2 = "text";
 let strStr = String(str2);
 console.log(`${typeof str2}  :  ${str2}`);  //  ->  string  :  text
@@ -76,7 +82,6 @@ let strN = String(n);
 console.log(`${typeof n}  :  ${n}`);  //  ->  object  :  null
 console.log(`${typeof strN}  :  ${strN}`);  //  ->  string  :  null
 //---------------------------------------------------
-
 //Conversión (casting) String a numero:
 let numeroUno = Number("2");
 let numeroDos = parseInt("2");
@@ -96,6 +101,7 @@ console.log(test);  //  ->  90
 console.log(typeof test);  //  ->  number
 
 
+
 let path2 = "C:\\" + "Windows";
 console.log(path);  //  ->  C:\Windows
 
@@ -106,13 +112,13 @@ console.log(typeof test2);  //  ->  string
 //La conversion aplica a todas las operaciones aritméticas, con
 //excepción de la suma "+".
 //---------------------------------------------------
-//Conversión a número:
+//Conversión a NUMBER:
 console.log(Number(42));  //  ->  42
 
 console.log(Number("11"));  //  ->  11
 console.log(Number("0x11"));  //  ->  17
 console.log(Number("0o11"));  //  ->  9
-console.log(Number("0b11"));  //  ->  3
+console.log(Number("0b11"));  //  ->  3 //El 11 esta en base 2 osea 11= binario; convierte de binario->decimal 11 -> 3
 console.log(Number("12e3"));  //    ->  12000
 console.log(Number("Infinity"));//  ->  Infinity
 console.log(Number("text"));  //  ->  NaN
@@ -127,4 +133,52 @@ console.log(Number(false));  //  ->  0
 console.log(Number(undefined));  //    ->  NaN
 
 console.log(Number(null));//  ->  0
+
+let textoNumero = "123ABC";
+let textoConvertido = parseInt(textoNumero);
+console.log(`${textoConvertido}`);//Number 123 parseInt convierte una cadena de texto en numero solo los digitos, hasta el último.
+//---------------------------------------------------
+
+
+//Conversión a BOOLEAN
+console.log(Boolean(true));  //  ->  true
+
+console.log(Boolean(42));  //  ->  true
+console.log(Boolean(0));  //  ->  false
+console.log(Boolean(NaN));  //  ->  false
+
+console.log(Boolean("text"));  //  ->  true
+console.log(Boolean(""));  //  ->  false
+
+console.log(Boolean(undefined));  //  ->  false
+
+console.log(Boolean(null));  //  ->  false
+//---------------------------------------------------
+
+//Conversión a BIGINT
+console.log(BigInt(11));  //  ->  11n
+console.log(BigInt(0x11));  //  ->  17n
+console.log(BigInt(11e2));  //  ->  1100n
+
+console.log(BigInt(true));  //  ->  1n
+
+console.log(BigInt("11"));  //  ->  11n
+console.log(BigInt("0x11"));  //  ->  17n
+
+console.log(BigInt(null));  //  ->  Uncaught  TypeError:  Cannot  convert  null  to  a  BigInt
+
+console.log(BigInt(undefined));  //  ->  Uncaught  TypeError:  Cannot  convert  undefined  to  a  BigInt.
+
+console.log(BigInt(NaN));  //  ->  Uncaught  RangeError:  
+// The  number  NaN  cannot  be  converted  to  a  BigInt  because  it  is  not  an  integer.
+//---------------------------------------------------
+
+//COnversiones IMPLÍCITAS
+const str1 = 42 + "1";
+console.log(str1);                //  ->  421
+console.log(typeof str1);  //  ->  string
+
+const str5 = 42 - "1";
+console.log(str5);                //  ->  41
+console.log(typeof str5);  //  ->  number
 

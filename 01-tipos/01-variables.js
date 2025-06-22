@@ -54,7 +54,6 @@ console.log(`${typeof str2} : ${str2}`);
 console.log(typeof str2 , str2);
 console.log(typeof str2 + " " + str2);
 
-
 //Si es un objeto:
 console.log(nombreObjeto["atributo"]);
 console.log(nombreObjeto.atributo);
