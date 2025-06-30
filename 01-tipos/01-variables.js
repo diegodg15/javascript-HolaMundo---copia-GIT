@@ -46,6 +46,29 @@ console.log(`La variable es ${variableDeImpresion}`);//Interpolación
 console.log("La variable es : " + variableDeImpresion);//Concatenación
 console.log("La variable es : ", variableDeImpresion);
 console.log("La variable es : ", variableDeImpresion, "más texto");
+//Tipos de impresión console.log con saltos de líneas
+console.log("Hola\nMundo");
+// Salida:
+// Hola
+// Mundo
+
+console.log(`Línea 1
+Línea 2
+Línea 3`);
+// Salida:
+// Línea 1
+// Línea 2
+// Línea 3
+
+const mensaje = "Primera línea" + "\n" + "Segunda línea";
+console.log(mensaje);
+// Salida:
+// Primera línea
+// Segunda línea
+
+console.log("Hola\tmundo")
+// Salida:
+// Hola	mundo
 
 //Ejemplo impresión console.log();
 let str2 = "text";

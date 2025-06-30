@@ -97,7 +97,7 @@ let suma2 = numeroUno + numeroDos;
 console.log(suma)
 console.log(suma2)
 
-let numeroDosParse = parseInt("24n4"); // Parse Int convierte el primer numero o cadena de numeros, ignorando lo demás.
+let numeroDosParse = parseInt("24n4"); // Parse Int convierte el primer número o cadena de números, ignorando lo demás.
 
 
 let path = "C:\\Windows" - "Windows";
@@ -121,7 +121,6 @@ console.log(typeof test2);  //  ->  string
 //---------------------------------------------------
 //Conversión a NUMBER:
 console.log(Number(42));  //  ->  42
-
 console.log(Number("11"));  //  ->  11
 console.log(Number("0x11"));  //  ->  17
 console.log(Number("0o11"));  //  ->  9
@@ -136,14 +135,77 @@ console.log(Number(123456789123456789123n));  //  -  >    123456789123
 
 console.log(Number(true));  //  ->  1
 console.log(Number(false));  //  ->  0
-
 console.log(Number(undefined));  //    ->  NaN
-
 console.log(Number(null));//  ->  0
 
 let textoNumero = "123ABC";
 let textoConvertido = parseInt(textoNumero);
 console.log(`${textoConvertido}`);//Number 123 parseInt convierte una cadena de texto en numero solo los digitos, hasta el último.
+
+//De BigInt a Number se pierde precisión
+const big = 12345678901234567890n;
+const num3 = Number(big);
+console.log(num3);  // 12345678901234567000  <- Precisión perdida
+
+//De cualquier tipo de dato a Number que de Nan
+const str4 = "abc";
+const num4 = Number(str4);
+console.log(num4); // NaN
+
+//Otras formas de convertir a number
+let number = "42.3abc";      // NaN (la cadena no es válida en su totalidad)
+let numberConvertionInt = parseInt(number);    // 42
+let numberConvertionFloat = parseFloat(number);  // 42.3
+
+//De boolean a number
+let isNumberBoolean = true;
+let numericoBoolean = Number(isNumberBoolean)
+console.log(numericoBoolean);// 1
+
+//Conversión con + y - a number
+let texto = "45";
+let convertido = +texto;
+console.log(convertido);       // 45
+console.log(typeof convertido); // "number"
+
+let str6 = "42";
+let num6 = -str6;
+console.log(num6);         // -42
+console.log(typeof num6);  // "number"
+
+//Tipos de conversiones a numero
+let numeroDecimales = "123.5";
+let numeroDecimalesParseInt = parseInt(numeroDecimales);
+console.log(typeof numeroDecimalesParseInt, numeroDecimalesParseInt);//number 123
+
+let numeroDecimalesParseFloat = parseFloat(numeroDecimales);
+console.log(typeof numeroDecimalesParseFloat, numeroDecimalesParseFloat);//number 123.5
+
+parseInt("08");        // 0 (¡interpreta como octal!)
+parseInt("08", 10);    // 8 (correcto con base decimal)
+
+//siempre especificar la base parsInt(cadena/String, base/Radix);
+let numero2 = "FF";
+let numero2Convert = parseInt(numero2, 16);
+console.log(numero2Convert);//255
+
+//De binario a decimal:
+let numeroBinario = 1010;
+let numeroDecimal = parseInt(numeroBinario, 2);
+console.log(numeroDecimal);//10
+
+let numeroBinario2 = 1011;
+let numeroDecimal2 = parseInt(numeroBinario2, 2);
+console.log(numeroDecimal2);//11
+
+//De decimal a binario:
+let numerodecimalDos = 2;
+let numeroBinarioDos = numerodecimalDos.toString(2)
+console.log(numeroBinarioDos);//10
+
+let numerodecimalDos2 = 1011;
+let numeroBinarioDos2 = numerodecimalDos2.toString(2)
+console.log(numeroBinarioDos2);//11
 //---------------------------------------------------
 
 
