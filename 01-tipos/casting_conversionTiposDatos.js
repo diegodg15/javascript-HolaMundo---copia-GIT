@@ -6,6 +6,9 @@ Usar literales no es la única forma de crear variables de los tipos primitivos 
 La segunda opción es crearlas mediante funciones constructoras . 
 Las siguientes funciones devolverán primitivas de un tipo dado: Boolean, Number, BigInt, y String.
 */
+/**
+ * La función BigInt. A diferencia de otras funciones constructoras, requiere que se le pase un valor inicial. Este puede ser un número entero que se convertirá a BigInt (ver ejemplos).
+*/
 const str = String();
 const num = Number();
 const bool = Boolean();
@@ -22,6 +25,9 @@ console.log(big1);  //  ->  42n
 
 const big2 = BigInt();      //  ->  Uncaught  TypeError:  Cannot  convert  undefined  to  a  BigInt
 //Estas funciones las usamos en conversiones de tipos.
+
+const NUMERO_BIG = BigInt(80);
+console.log(NUMERO_BIG);//80n
 //---------------------------------------------------
 //Ejemplo de conversión:
 
@@ -51,7 +57,8 @@ console.log(typeof boolFromNumber, boolFromNumber)//Boolean false
 
 
 //>>>>>>>>>>CONVERSIONES DE TIPOS DE DATOS<<<<<<<<<<
-//COnversión de STRING:
+//Conversión de STRING:
+//cuando se convierte un valor a string, cualquier tipo se puede convertir, y el resultado será una cadena de texto que representa ese valor. Esto se llama coerción de tipos o type casting.
 let str2 = "text";
 let strStr = String(str2);
 console.log(`${typeof str2}  :  ${str2}`);  //  ->  string  :  text
@@ -173,7 +180,7 @@ console.log(BigInt(NaN));  //  ->  Uncaught  RangeError:
 // The  number  NaN  cannot  be  converted  to  a  BigInt  because  it  is  not  an  integer.
 //---------------------------------------------------
 
-//COnversiones IMPLÍCITAS
+//Conversiones IMPLÍCITAS
 const str1 = 42 + "1";
 console.log(str1);                //  ->  421
 console.log(typeof str1);  //  ->  string
@@ -181,4 +188,6 @@ console.log(typeof str1);  //  ->  string
 const str5 = 42 - "1";
 console.log(str5);                //  ->  41
 console.log(typeof str5);  //  ->  number
+
+
 

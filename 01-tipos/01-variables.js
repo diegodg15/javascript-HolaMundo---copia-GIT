@@ -47,11 +47,11 @@ console.log("La variable es : " + variableDeImpresion);//Concatenación
 console.log("La variable es : ", variableDeImpresion);
 console.log("La variable es : ", variableDeImpresion, "más texto");
 
-//Ejemplo imprsión console.log();
+//Ejemplo impresión console.log();
 let str2 = "text";
 let strStr = String(str2);
 console.log(`${typeof str2} : ${str2}`);
-console.log(typeof str2 , str2);
+console.log(typeof str2, str2);
 console.log(typeof str2 + " " + str2);
 
 //Si es un objeto:
