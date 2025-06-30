@@ -206,6 +206,26 @@ console.log(numeroBinarioDos);//10
 let numerodecimalDos2 = 1011;
 let numeroBinarioDos2 = numerodecimalDos2.toString(2)
 console.log(numeroBinarioDos2);//11
+
+//Conversión implícita:
+const precio = "99.99";
+const total = +precio * 1.16; // Conversión implícita
+
+//Conversión rápida:
+let texto3 = "45";
+let convertido1 = +texto3; //Si es - el número se convierte a negativo.
+console.log(convertido1);       // 45
+console.log(typeof convertido1); // "number"
+
+let texto2 = "45";
+let convertido2 = +texto2;
+console.log(convertido2);// -45
+console.log(typeof convertido2); // "number"
+
+const a = "123";
+console.log(+a);        // 123
+console.log(Number(a)); // 123
+
 //---------------------------------------------------
 
 
@@ -222,6 +242,20 @@ console.log(Boolean(""));  //  ->  false
 console.log(Boolean(undefined));  //  ->  false
 
 console.log(Boolean(null));  //  ->  false
+
+let numeroNoBooleano = 23;
+let conversionNumeroBooleano = Boolean(numeroNoBooleano);
+console.log(typeof conversionNumeroBooleano, conversionNumeroBooleano);//boolean true
+console.log(Boolean(numeroNoBooleano));//True
+
+/*Truthy y Falsy = cualquier valor en un contexto booleano
+* por ejemplo 0 no es un Boolean, sino un contexto del valor en Boolean, sría un Falsy. 
+* Boolean solo es TRUE o FALSE.*/
+if (0) {
+    console.log("Es traducido a true");
+} else {
+    console.log("Es traducido a false");
+}
 //---------------------------------------------------
 
 //Conversión a BIGINT
