@@ -66,4 +66,16 @@ const hummus = function (factor) {
     ingredient(0.5, "cucharadita", "comino");
 };
 
-console.log(hummus(2))
+console.log(hummus(2));
+
+//Ejercicio básico
+console.time("Tiempo respuesta");
+{
+    let saludo = "¿Hola cómo estás?";
+let saludo2 = String("¿Hola cómo estás?");
+console.log(`El mensaje es: ${saludo}`);
+console.log(`El mensaje es: ${typeof saludo}`);
+}
+console.timeEnd("Tiempo respuesta");
+
+//Ejercicio calcular factorial de un número

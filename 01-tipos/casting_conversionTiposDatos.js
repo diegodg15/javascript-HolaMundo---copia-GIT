@@ -231,8 +231,9 @@ console.log(Number(a)); // 123
 
 //Conversión a BOOLEAN
 console.log(Boolean(true));  //  ->  true
-
+//aquí el valor true es boolean
 console.log(Boolean(42));  //  ->  true
+//aqui el valor 42 el truthy y se convierte a un booleano osea true
 console.log(Boolean(0));  //  ->  false
 console.log(Boolean(NaN));  //  ->  false
 
