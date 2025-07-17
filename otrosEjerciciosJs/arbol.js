@@ -72,10 +72,22 @@ console.log(hummus(2));
 console.time("Tiempo respuesta");
 {
     let saludo = "¿Hola cómo estás?";
-let saludo2 = String("¿Hola cómo estás?");
-console.log(`El mensaje es: ${saludo}`);
-console.log(`El mensaje es: ${typeof saludo}`);
+    let saludo2 = String("¿Hola cómo estás?");
+    console.log(`El mensaje es: ${saludo}`);
+    console.log(`El mensaje es: ${typeof saludo}`);
 }
 console.timeEnd("Tiempo respuesta");
 
-//Ejercicio calcular factorial de un número
+//Ejercicio calcular factorial de un número:
+let n = 4;
+
+function factorial(n) {
+  if (n === 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
+
+// Se debe llamar a factorial pasando el valor de n
+console.log(factorial(n));  // 24
