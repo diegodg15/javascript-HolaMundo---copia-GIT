@@ -82,12 +82,21 @@ console.timeEnd("Tiempo respuesta");
 let n = 4;
 
 function factorial(n) {
-  if (n === 0) {
-    return 1;
-  } else {
-    return n * factorial(n - 1);
-  }
+    if (n === 0) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
 }
 
 // Se debe llamar a factorial pasando el valor de n
 console.log(factorial(n));  // 24
+
+//Suma entre numeros pares de 2 hasta 100
+let numerSuma = 2;
+let numero = 4;
+while (numero <= 100) {
+    numerSuma = numerSuma + numero;
+    numero += 2;
+}
+console.log(`suma pares entre 2 y 100 =`, numerSuma)
