@@ -99,4 +99,11 @@ while (numero <= 100) {
     numerSuma = numerSuma + numero;
     numero += 2;
 }
-console.log(`suma pares entre 2 y 100 =`, numerSuma)
+console.log(`suma pares entre 2 y 100 =`, numerSuma);
+
+//Suma de los números impares del 1 al 10
+let sumaNumerosImpares = 0;
+for (let n3 = 1; n3 <= 10; n3 += 2) {
+    sumaNumerosImpares = sumaNumerosImpares + n3;
+}
+console.log(sumaNumerosImpares);
