@@ -107,3 +107,11 @@ for (let n3 = 1; n3 <= 10; n3 += 2) {
     sumaNumerosImpares = sumaNumerosImpares + n3;
 }
 console.log(sumaNumerosImpares);
+//otra forma
+let numeroImpar = 1;
+let contadorNumeroImpar= 3;
+while (contadorNumeroImpar<=10){
+    numeroImpar = numeroImpar + contadorNumeroImpar
+    contadorNumeroImpar+=2;
+}
+console.log("es" + numeroImpar);

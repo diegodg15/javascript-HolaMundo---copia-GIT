@@ -41,8 +41,11 @@ console.log(num, num2, num3)//2 3 4
 
 //Tipos de impresión console.log
 let variableDeImpresion = "IMPRESIÓN";
+let otraVariable = "Saludos";
 console.log(variableDeImpresion);
 console.log(`La variable es ${variableDeImpresion}`);//Interpolación
+console.log(`La variable es ${variableDeImpresion + otraVariable}`);//Interpolación
+console.log(`La variable es ${variableDeImpresion} ${otaVariable}`);//Interpolación
 console.log("La variable es : " + variableDeImpresion);//Concatenación
 console.log("La variable es : ", variableDeImpresion);
 console.log("La variable es : ", variableDeImpresion, "más texto");
