@@ -76,6 +76,7 @@ console.log("Hola\tmundo")
 //Ejemplo impresión console.log();
 let str2 = "text";
 let strStr = String(str2);
+let str5 = String("hola");
 console.log(`${typeof str2} : ${str2}`);
 console.log(typeof str2, str2);
 console.log(typeof str2 + " " + str2);
