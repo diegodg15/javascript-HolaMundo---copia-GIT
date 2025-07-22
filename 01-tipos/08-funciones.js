@@ -6,18 +6,35 @@ function saludar() {
 
 saludar();
 //-------------------------
+//Pasar una variable a una funcion:
+function saludar(nombre) {
+    console.log("Hola " + nombre);
+}
+
+let miNombre = "D";
+saludar(miNombre);  // → Hola D
+//-------------------------
+function sumar(a, b) {
+    return a + b;
+}
+
+let x = 5;
+let y = 8;
+console.log(sumar(x, y));  // → 13
+
+//-------------------------
 function suma() {
-    return 2+2;
+    return 2 + 2;
 }
 
 let resultado = suma();
 console.log(suma());
 
 //--------------------------------
-let suma2=function(n1,n2){
-    return n1+ n2;
+let suma2 = function (n1, n2) {
+    return n1 + n2;
 }
-console.log(suma2(2,3));
+console.log(suma2(2, 3));
 
 //---------------------------------
 //Impresión console.log

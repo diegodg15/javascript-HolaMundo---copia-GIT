@@ -28,5 +28,4 @@ console.log(halve(100));
 // → 50
 console.log(n);
 // → 10
-
-
+//¿Por qué n2 dentro de la función no toma el n2 = 10 externo?: Porque estás declarando un parámetro n2 dentro de la función, y eso crea una nueva variable local que somete (shadow) a la del ámbito externo. Es decir, el n2 dentro de halve(n2) no tiene nada que ver con el n2 = 10 que está afuera.c
