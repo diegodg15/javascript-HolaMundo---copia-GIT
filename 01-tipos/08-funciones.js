@@ -72,3 +72,17 @@ function a() {
     console.log(n71);     // Esto se ejecuta
     return n71;           // Aquí termina la función. Nada después se ejecuta.
 }
+//--------------------------------
+const halve = function (n6) {
+    let resultado = n6 / 2;
+    console.log(resultado);     // Imprime el resultado dentro de la función
+    return resultado;
+};
+
+let n6 = 10;
+
+console.log(halve(100));      // Imprime: 50 (desde adentro), luego 50 (por return)
+console.log(n6);              // Imprime: 10 (la variable externa sigue intacta)
+
+let numero4 = 24;
+halve(numero4);               // Imprime: 12 (por el console.log dentro de la función)

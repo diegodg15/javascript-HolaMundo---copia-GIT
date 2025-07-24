@@ -109,9 +109,49 @@ for (let n3 = 1; n3 <= 10; n3 += 2) {
 console.log(sumaNumerosImpares);
 //otra forma
 let numeroImpar = 1;
-let contadorNumeroImpar= 3;
-while (contadorNumeroImpar<=10){
+let contadorNumeroImpar = 3;
+while (contadorNumeroImpar <= 10) {
     numeroImpar = numeroImpar + contadorNumeroImpar
-    contadorNumeroImpar+=2;
+    contadorNumeroImpar += 2;
 }
 console.log("es" + numeroImpar);
+
+//Ejercicio: 
+/**En un gallinero se necesitan 165KG de maíz al día para alimentar a las gallinas y gallos, se tine un gallo para 5 gallinas
+ * , se sabe que una gallina come 500g/día, el doble de un gallo.
+ * ¿Cuántos animales hay en el gallinero?
+ */
+let kg = 165;
+let conversionKg = kg * 1000;//conversión kg a g.//tabla 3 simples.
+
+const CONSUMO_TOTAL = conversionKg;
+const CONSUMO_GALLINA = 500;
+const CONSUMO_GALLO = CONSUMO_GALLINA / 2;
+//Relación: 1 gallo por cada 5 gallinas
+//Sea x = cantidad de gallos
+//Entonces gallinas = 5 * x
+
+//Vamos a encontrar x tal que:
+//(5x * 500) + (x * 250) = 165000
+function calcularAnimales() {
+    let x = 1;
+    while (true) {
+        const gallinas = 5 * x;
+        const alimentoGallinas = gallinas * CONSUMO_GALLINA;
+        const alimentoGallos = x * CONSUMO_GALLO;
+        const totalAlimento = alimentoGallinas + alimentoGallos;
+
+        if (totalAlimento === CONSUMO_TOTAL) {
+            const totalAnimales = gallinas + x;
+            console.log(`Gallos: ${x}`);
+            console.log(`Gallinas: ${gallinas}`);
+            console.log(`Total animales: ${totalAnimales}`);
+            break;
+        }
+        x++;
+    }
+}
+calcularAnimales();
+
+
+
