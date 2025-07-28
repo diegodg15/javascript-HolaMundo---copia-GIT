@@ -178,7 +178,7 @@ console.log(typeof cadenaNumeroBigInt, cadenaNumeroBigInt);
 let cadenaBigIntBooleano = Boolean(cadenaNumeroBigInt);
 console.log(typeof cadenaBigIntBooleano, cadenaBigIntBooleano);
 //Otra forma
-let b5 = Boolean( BigInt(Number("1234")));
+let b5 = Boolean(BigInt(Number("1234")));
 console.log(`${b5} [${typeof b5}]`);
 
 // or
@@ -188,14 +188,162 @@ let n = Number(s);
 let bi = BigInt(n);
 let b6 = Boolean(bi);
 console.log(`${b6} [${typeof b6}]`);
+//------------------------------------------
+/**
+ * Objetos:
+Pregunta 1: Cree un objeto que describa un billete de tren y almacénelo en la variable billete. El objeto debe tener tres campos:
 
+estación de partida (nombre from , indique el nombre de la estación más cercana en su área como valor);
+estación final (nombre de la to, indique cualquier otra estación dentro de 100 km como valor);
+el precio del billete (nombre price)precio, indique como valor la cantidad que desearía pagar por este boleto).
 
+El objeto debe crearse entre llaves, donde se listarán inmediatamente todos los campos creados. A continuación, se mostrarán los valores de todos los campos del ticket en la consola.
+ */
 
+let ticket = {
+  from: "Santiago",
+  to: "El Quisco",
+  price: 6500
+};
+console.log(ticket);//Listar todo
+console.log(`Pasaje desde : ${ticket.from}`);
+console.log(`Pasaje hasta : ${ticket.to}`);
+console.log(`Pasaje precio : $${ticket.price}`);
 
+/**
+ * Pregunta 2: Declare un objeto vacío y guárdelo en una variable de persona. Usando la notación de punto, agregue el nombre y apellido. Añada campos al objeto introduciendo sus datos como valores. Intente mostrar los campos individuales en la consola.
+ */
+let persona = {};
+persona.nombre = "Alan";
+persona.apellido = "Turing";
+console.log(persona.nombre);
+console.log(persona.apellido);
+console.log(`Nombre:${persona.nombre}, Apellido: ${persona["apellido"]}`);
+//------------------------------------------
+/**
+ * Matrices:
+Pregunta 3: Estamos creando nuestra pequeña biblioteca de libros sobre programación en JavaScript. Tenemos tres libros y queremos preparar una lista. Almacenaremos tres datos sobre cada libro: título, autor y número de páginas.
+Hablando JavaScript , Axel Rauschmayer, 460;
+Programación de aplicaciones JavaScript , Eric Elliott, 254;
+Comprensión de ECMAScript 6 , Nicholas C. Zakas, 352.
+Crea una matriz de tres objetos que representen los libros. Cada objeto debe tener las siguientes propiedades: título, autor y páginas.
+ */
+let libros = [
+  {
+    titulo: "Hablando JavaScript",
+    autor: "Axel Rauschmayer",
+    nroPaginas: 460
+  },
+  {
+    titulo: "Programación de aplicaciones JavaScript",
+    autor: "Eric Elliott",
+    nroPaginas: 254
+  },
+  {
+    titulo: "Comprensión de ECMAScript 6",
+    autor: "Nicholas C. Zakas",
+    nroPaginas: 352
+  }
+];
 
+//Pregunta 4: Agregar un nuevo libro a la colección: Aprendiendo Patrones de Diseño de JavaScript , de Addy Osmani, 254 páginas. Utilice el método adecuado para ello, que adjuntará el libro al final de la matriz. Muestre la longitud de la matriz y, a su vez, todos los nombres de los libros de la colección.
+libros[3] = {
+  titulo: "Aprendiendo Patrones de Diseño de JavaScript",
+  autor: "Addy Osmani",
+  nroPaginas: 254
+};
 
-//Ejercicio N°1:
-//Ejercicio N°1:
+console.log(libros.length);
+console.log(libros);
+
+//Otra forma:
+let books = [{
+  title: "Speaking JavaScript",
+  author: "Axel Rauschmayer",
+  pages: 460
+},
+{
+  title: "Programming JavaScript Applications",
+  author: "Eric Elliot",
+  pages: 254
+},
+{
+  title: "Understanding ECMAScript 6",
+  author: "Nicholas C. Zakas",
+  pages: 352
+}
+];
+
+let newBook = {
+  title: "Learning JavaScript Design Patterns",
+  author: "Addy Osmani",
+  pages: 254
+};
+books.push(newBook);
+console.log(books.length);
+console.log(books[0].title);
+console.log(books[1].title);
+console.log(books[2].title);
+console.log(books[3].title);
+
+//Pregunta 5: Utilice el comando slice para copiar los dos últimos libros a la nueva matriz.
+let seleccionLibros = libros.slice(-2);
+let selectedBooks = books.slice(-2);
+
+//Pregunta 6: El primer libro de la colección se pierde por causas desconocidas. Ya has aceptado la pérdida, así que elimínalo de la matriz. ¿Qué método utilizarás para ello? Muestra la longitud de la matriz y todos los nombres de los libros de la colección, uno por uno.
+let eliminarPrimerLibro = libros.shift();
+
+books.shift();
+console.log(books.length);
+console.log(books[0].title);
+console.log(books[1].title);
+console.log(books[2].title);
+
+//Pregunta 7: Muestra la suma de las páginas de todos los libros de la colección.
+let sumaPaginasLibro = libros[0].nroPaginas + libros[1].nroPaginas + libros[2].nroPaginas;
+console.log("paginas totales:" + sumaPaginasLibro);
+
+let sum = books[0].pages + books[1].pages + books[2].pages;
+console.log(`pages: ${sum}`);
+//2.3.4 PRÁCTICA DE SECCIÓN
+//Tarea: Hay un código que no funciona. Intenta solucionarlo usando solo comentarios. Si es posible, usa los atajos de teclado de tu editor
+/**
+ * "use  strict";
+
+const  prefix  =  "username_";
+
+let  userName  =  "Jack";
+const  userName  =  "Adam";
+
+let  prefixedUserName;
+const  prefixedUserName;
+
+userName  =  "John";
+prefixedUserName  =  prefix  +  userName;
+
+console.log(prefixedUserName  +  prefixedUserName2);
+console.log(prefixedUserName2);
+
+ */
+{
+  "use strict";
+
+  const prefix = "username_";
+
+  let userName = "Jack";
+  // const userName = "Adam"; 
+
+  let prefixedUserName;
+  // const prefixedUserName; 
+
+  userName = "John";
+  prefixedUserName = prefix + userName;
+
+  console.log(prefixedUserName /*+ prefixedUserName2*/);
+  // console.log(prefixedUserName2); 
+
+}
+
 //Ejercicio N°1:
 //Ejercicio N°1:
 //Ejercicio N°1:

@@ -152,3 +152,69 @@ console.log(nombresEmpujar.length);  //  ->  4
 nombresEmpujar.push("Amelia");
 console.log(nombresEmpujar.length);  //  ->  5
 console.log(nombresEmpujar);  //  -  >  ["Olivia",  "Emma",  "Mateo", "Samuel", "Amelia"
+
+
+//Desplazamiento .unshift
+/**
+ * El método funciona de forma similar a "push", con la diferencia de que se añade un nuevo elemento al principio del array. La longitud del array se incrementa en 1, todos los elementos antiguos se mueven a la derecha y el nuevo elemento se coloca en el espacio vacío creado al principio del array. El índice del nuevo elemento es 0.
+ */
+
+let names6 = ["Olivia", "Emma", "Mateo", "Samuel"];
+console.log(names6.indexOf("Mateo"));  //  ->  2
+console.log(names6.indexOf("Victor"));  //  ->  -1
+names6.unshift("Alan");
+console.log(names.indexOf("Alan"));//0
+console.log(names.length);//5
+
+//Estallido .pop
+/**El método permite eliminar el último elemento del array. Al ejecutarlo, se devuelve el elemento con el índice más alto y se elimina del array original. La longitud del array se reduce en 1. */
+let namesNuevo = ["Olivia", "Emma", "Mateo", "Samuel"];
+console.log(namesNuevo.length);  //  ->  4
+
+let name = namesNuevo.pop();//Guarda el valor de "Samuel"
+console.log(namesNuevo.length);  //  ->  3
+console.log(namesNuevo);  //  ->  Samuel
+console.log(namesNuevo);  //  ->  ["Olivia",  "Emma",  "Mateo"]
+
+//Desplazamiento/cambio .shift
+let names8 = ["Olivia", "Emma", "Mateo", "Samuel"];
+console.log(names8.length);  //  ->  4
+
+let name8 = names8.shift();
+console.log(names8.length);  //  ->  3
+console.log(name8);  //  ->  Olivia
+console.log(names8);  //  ->  ["Emma",  "Mateo",  "Samuel"]
+
+//Reversa .reverse
+let names9 = ["Olivia", "Emma", "Mateo", "Samuel"];
+
+names9.reverse();
+console.log(names9);  //  ->  ["Samuel",  "Mateo",  "Emma","Olivia"
+
+//Desplazamiento .slice
+let names02 = ["Olivia", "Emma", "Mateo", "Samuel"];
+
+let n1 = names02.slice(2);
+console.log(n1);  //  ->  ["Mateo",  "Samuel"]
+
+let n2 = names02.slice(1, 3);
+console.log(n2);  //  ->  ["Emma",  "Mateo"]
+
+let n3 = names02.slice(0, -1);
+console.log(n3);  //  ->  ["Olivia",  "Emma",  "Mateo"]
+
+let n4 = names02.slice(-1);
+console.log(n4);  //  ->  ["Samuel"]
+
+console.log(names02);  //  ->  ["Olivia",  "Emma",  "Mateo","Samuel"
+
+
+//Concatenación .concat
+let nombres2 = ["Olivia", "Emma", "Mateo", "Samuel"];
+let otherNames = ["William", "Jane"];
+let allNames = nombres2.concat(otherNames);
+
+console.log(nombres2);  //  ->  ["Olivia",  "Emma",  "Mateo","Samuel"
+console.log(otherNames);  //  ->  ["William",  "Jane"]
+console.log(allNames);  //  ->  ["Olivia",  "Emma",  "Mateo","Samuel", "William", "Jane"
+
