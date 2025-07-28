@@ -115,6 +115,23 @@ while (contadorNumeroImpar <= 10) {
     contadorNumeroImpar += 2;
 }
 console.log("es" + numeroImpar);
+//Otra forma:
+//Funcion suma numeros impares:
+let n6 = 1;
+function sumaNumerosImpares(n6) {
+    let n7 = 3;
+
+    while (n6 <= 10) {
+        n6 = n6 + n7;
+        n7 += 2;
+    }
+
+    return n6;
+}
+
+console.log(sumaNumerosImpares(n6));
+
+
 
 //Ejercicio: 
 /**En un gallinero se necesitan 165KG de maíz al día para alimentar a las gallinas y gallos, se tine un gallo para 5 gallinas
