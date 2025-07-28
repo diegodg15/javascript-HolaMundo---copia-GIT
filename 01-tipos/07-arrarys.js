@@ -122,3 +122,33 @@ console.log(typeof day);  //  ->  string
 
 console.log(days instanceof Array);  //  ->  true
 console.log(day instanceof Array);  //  ->  false
+
+/**
+ * Elinstancia deEl operador es un operador de dos argumentos que requiere que se especifiquen la variable (o literal) y la clase del objeto que se está probando. En nuestro caso, la clase  Array. El operador regres a TRUE o FALSE, dependiendo del resultado de la prueba.
+ */
+
+//Longitud .length
+let names2 = ["Olivia", "Emma", "Mateo", "Samuel"];
+console.log(names2.length);  //  ->  4 (0,1,2,3 = 4 total)
+
+names2[5] = "Amelia";
+console.log(names2.length);  //  ->  6 por que le estamos asignando la posicion 5 y la posicion 4 no tiene nada, lo que se suma igual.
+
+console.log(names2);  //  ->  ["Olivia",  "Emma",  "Mateo",  
+"Samuel", undefined, "Amelia";
+console.log(names2[3]);  //  ->  Samuel
+console.log(names2[4]);  //  ->  undefined
+console.log(names2[5]);  //  ->  Amelia
+
+//Índice de .indexOf
+let nombreLista = ["Olivia", "Emma", "Mateo", "Samuel"];
+console.log(nombreLista.indexOf("Mateo"));  //  ->  2
+console.log(nombreLista.indexOf("Victor"));  //  ->  -1
+
+//Empujar .push
+let nombresEmpujar = ["Olivia", "Emma", "Mateo", "Samuel"];
+console.log(nombresEmpujar.length);  //  ->  4
+
+nombresEmpujar.push("Amelia");
+console.log(nombresEmpujar.length);  //  ->  5
+console.log(nombresEmpujar);  //  -  >  ["Olivia",  "Emma",  "Mateo", "Samuel", "Amelia"
