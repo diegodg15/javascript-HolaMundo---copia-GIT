@@ -49,6 +49,7 @@ console.log(`La variable es ${variableDeImpresion} ${otaVariable}`);//Interpolac
 console.log("La variable es : " + variableDeImpresion);//Concatenación
 console.log("La variable es : ", variableDeImpresion);
 console.log("La variable es : ", variableDeImpresion, "más texto");
+console.log(`La variable es: '\n'${variableDeImpresion}`)
 //Tipos de impresión console.log con saltos de líneas
 console.log("Hola\nMundo");
 // Salida:
@@ -92,7 +93,7 @@ console.log(`El objeto es : ${nombreObjeto["atributo"]}`);
 let contador = 100;
 console.log(contador); //->100
 {
-    contador = 200;//Reasignacionde variable
+    contador = 200;//Reasignacion de variable
     console.log(contador);//->200
 }
 
@@ -103,9 +104,21 @@ console.log(contador);//->200
 let contador2 = 100;
 console.log(contador);//->100
 {
-    let contador2 = 200;
+    let contador2 = 200; // Redeclaración 
     console.log(contador);//->200
 }
 console.log(contador);//->100
 
 //El console.log al final imprime 100 por que esta declarada nivel global.
+
+
+//---------------------------------------------------------
+console.log(a);
+
+//---------------------------------------------------------
+
+
+
+
+
+

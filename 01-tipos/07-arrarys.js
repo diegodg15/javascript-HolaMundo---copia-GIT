@@ -218,3 +218,8 @@ console.log(nombres2);  //  ->  ["Olivia",  "Emma",  "Mateo","Samuel"
 console.log(otherNames);  //  ->  ["William",  "Jane"]
 console.log(allNames);  //  ->  ["Olivia",  "Emma",  "Mateo","Samuel", "William", "Jane"
 
+//Operador de propagación: 
+const autos = ["Ford", "Nissan"];
+let autos2 = [... autos, "Toyota"];
+console.log(autos)
+console.log(autos2)
