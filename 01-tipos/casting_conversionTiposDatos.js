@@ -88,6 +88,21 @@ let n = null;
 let strN = String(n);
 console.log(`${typeof n}  :  ${n}`);  //  ->  object  :  null
 console.log(`${typeof strN}  :  ${strN}`);  //  ->  string  :  null
+
+//Otro tipo de conversión a string:
+let numero = 12;
+let numeroConvertido = numero +"";
+console.log(typeof numeroConvertido, numeroConvertido);
+
+let numero02 = 12;
+let numeroConvertido2 = `${numero02}` ;//conversión moderna es6+
+console.log(typeof numeroConvertido2, numeroConvertido2);
+
+let numero3 = 14;
+let numeroConvertido3 = numero3.toString();//puede fallar si es undefined o null
+console.log(typeof numeroConvertido2, numeroConvertido3);
+
+
 //---------------------------------------------------
 //Conversión (casting) String a numero:
 let numeroUno = Number("2");
