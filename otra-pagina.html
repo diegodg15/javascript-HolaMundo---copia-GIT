@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos básicos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Descripción única de 150-160 caracteres sobre tu página. Incluye palabras clave relevantes.">
+    <meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3">
+    <meta name="author" content="Tu Nombre o Marca">
+
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:title" content="Título Atractivo para Redes Sociales">
+    <meta property="og:description" content="Descripción compartida en redes">
+    <meta property="og:image" content="URL_IMAGEN_REDES_SOCIALES">
+    <meta property="og:url" content="URL_CANONICA">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Título para Twitter">
+    <meta name="twitter:description" content="Descripción para Twitter">
+    <meta name="twitter:image" content="URL_IMAGEN_TWITTER">
+
+    <!-- Canonical URL y Favicon -->
+    <link rel="canonical" href="URL_CANONICA">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Hojas de Estilo -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Título SEO (55-65 caracteres) -->
+    <title>Título Principal con Palabra Clave | Marca</title>
+</head>
+
+<body>
+    <!-- Header Semántico -->
+    <header role="banner">
+        <div class="container">
+            <!-- Logo con enlace a inicio -->
+            <a href="/" aria-label="Ir a página de inicio">
+                <img src="logo.png" alt="Logo de la marca" width="200" height="40">
+            </a>
+
+            <!-- Navegación Principal -->
+            <nav role="navigation" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="/" aria-current="page">Inicio</a></li>
+                    <li><a href="/servicios">Servicios</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main role="main">
+        <!-- Hero Section -->
+        <section aria-labelledby="hero-heading">
+            <div class="container">
+                <h1 id="hero-heading">Título Principal Impactante</h1>
+                <p>Texto introductorio breve y persuasivo</p>
+                <a href="#cta" class="btn">Llamada a la Acción</a>
+            </div>
+        </section>
+
+        <!-- Sección de Servicios -->
+        <section aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading">Nuestros Servicios</h2>
+                <div class="grid">
+                    <article>
+                        <h3>Servicio 1</h3>
+                        <p>Descripción breve con palabra clave relevante</p>
+                    </article>
+                    <article>
+                        <h3>Servicio 2</h3>
+                        <p>Descripción breve con palabra clave relevante</p>
+                    </article>
+                    <article>
+                        <h3>Servicio 3</h3>
+                        <p>Descripción breve con palabra clave relevante</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section aria-labelledby="testimonials-heading" itemscope itemtype="https://schema.org/Review">
+            <div class="container">
+                <h2 id="testimonials-heading">Lo que dicen nuestros clientes</h2>
+                <blockquote>
+                    <p itemprop="reviewBody">"Testimonio real de un cliente satisfecho"</p>
+                    <footer>
+                        <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+                            <span itemprop="name">Nombre del Cliente</span>
+                        </span>,
+                        <span itemprop="worksFor">Empresa</span>
+                    </footer>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Sección de Contacto -->
+                <section aria-labelledby="contact-heading">
+                    <h3 id="contact-heading">Contacto</h3>
+                    <address>
+                        <p>Email: <a href="mailto:info@ejemplo.com">info@ejemplo.com</a></p>
+                        <p>Teléfono: <a href="tel:+123456789">+123 456 789</a></p>
+                    </address>
+                </section>
+
+                <!-- Enlaces Rápidos -->
+                <section aria-labelledby="quick-links-heading">
+                    <h3 id="quick-links-heading">Enlaces Rápidos</h3>
+                    <nav aria-label="Enlaces rápidos">
+                        <ul>
+                            <li><a href="/politica-privacidad">Política de Privacidad</a></li>
+                            <li><a href="/terminos">Términos de Uso</a></li>
+                            <li><a href="/mapa-del-sitio">Mapa del Sitio</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+
+            <!-- Derechos de autor -->
+            <div class="copyright">
+                <p>&copy; 2023 Nombre de tu Empresa. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js" defer></script>
+</body>
+
+</html>
