@@ -89,13 +89,13 @@ let strN = String(n);
 console.log(`${typeof n}  :  ${n}`);  //  ->  object  :  null
 console.log(`${typeof strN}  :  ${strN}`);  //  ->  string  :  null
 
-//Otro tipo de conversión a string:
+//Otros tipos de conversiones a string:
 let numero = 12;
-let numeroConvertido = numero +"";
+let numeroConvertido = numero + "";
 console.log(typeof numeroConvertido, numeroConvertido);
 
 let numero02 = 12;
-let numeroConvertido2 = `${numero02}` ;//conversión moderna es6+
+let numeroConvertido2 = `${numero02}`;//conversión moderna es6+
 console.log(typeof numeroConvertido2, numeroConvertido2);
 
 let numero3 = 14;
