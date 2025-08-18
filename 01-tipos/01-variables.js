@@ -50,6 +50,16 @@ console.log("La variable es : " + variableDeImpresion);//Concatenación
 console.log("La variable es : ", variableDeImpresion);
 console.log("La variable es : ", variableDeImpresion, "más texto");
 console.log(`La variable es: '\n'${variableDeImpresion}`)
+//INTEPOLACIÓN:
+{
+const nombre = "Diego";
+const edad = 24;
+{
+    let mensaje = `Mi nombre es ${nombre} y mi tengo ${edad} años`;
+    console.log(mensaje);
+}
+}
+
 //Tipos de impresión console.log con saltos de líneas
 console.log("Hola\nMundo");
 // Salida:
