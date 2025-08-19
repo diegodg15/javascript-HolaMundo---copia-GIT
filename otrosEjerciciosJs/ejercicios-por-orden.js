@@ -1,4 +1,4 @@
-//Ejercicios dgenerales en orden.
+//Ejercicios generales en orden.
 
 //Ejercicios sobre variables:
 /* Declara tres variables: una con var, otra con let y otra con const, e imprime sus valores en consola.
@@ -23,8 +23,7 @@
     let m = 1;
     let n = 2;
 
-    m = n;
-    n = m;
+    [m,n] = [n,m];// destructuring assignment (asignación por desestructuración)
     console.log(m);
     console.log(n);
 }
@@ -36,7 +35,7 @@
 
     aux = a;
     a = b;
-    b = c;
+    b = aux;
 
     console.log(a,b)
 }
