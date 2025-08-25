@@ -5,10 +5,10 @@
  */
 {
     const SEGUNDOS = 60;
-    let horas = null;
-    let minutos = null;
-    let segundos = null;
     function conversionAsegundos(horas, minutos, segundos) {
+        let horas = null;
+        let minutos = null;
+        let segundos = null;
         let conversion = horas * (SEGUNDOS ** 2) + minutos * SEGUNDOS + segundos;
         let resultado = conversion;
         return console.log(`EL resultado es:${resultado} segundos`);

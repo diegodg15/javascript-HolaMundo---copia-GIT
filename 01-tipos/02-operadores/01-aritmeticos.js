@@ -49,5 +49,83 @@ console.log(a);
 
 }
 
+//OPERADORES UNARIOS DE INCREMENTO Y DECREMENTO
+{
+    /**
+     *let n++; --> n = n +1; --> n+=1 
+     */
+    
 
+    let n1 = 10;
+    let n2 = 10;
+
+    console.log(n1); // -> 10
+    console.log(n1++); // -> 10 //Esto pasa porque es postincremento, osea la variable la imprime y luego la incrementa.
+    console.log(n1); // -> 11
+
+    console.log(n2); // -> 10
+    console.log(++n2); // -> 11 //Esto pasa porque es preincremento, osea la variable se incrmeneta y luego se imprime.
+    console.log(n2); // -> 11
+
+    let n3 = 20;
+    let n4 = 20;
+
+    console.log(n3); // -> 20
+    console.log(n3--); // -> 20
+    console.log(n3); // -> 19
+
+    console.log(n4); // -> 20
+    console.log(--n4); // -> 19
+    console.log(n4); // -> 19
+
+    {
+        //Otro ejemplo:
+        let n = 3;
+        while (n < 6) {
+            ++n;
+            console.log(n); // 4,5, 6
+        }
+        /**
+         * Iteración 1: n = 3 → ++n = 4 → condición 4 < 6 ✅
+         * Iteración 2: ++n = 5 → condición 5 < 6 ✅
+         * Iteración 3: ++n = 6 → condición 6 < 6 ❌ → se detiene
+         * ➡️ Se ejecuta 3 veces, y n toma los valores: 4, 5, 6
+         */
+
+        let n2 = 3;
+        while (n2 < 6) {
+            n2++;
+            console.log(n2); // 4,5, 6
+        }
+        /**
+         * Iteración 1: n = 3 → condición 3 < 6 ✅ → n++ = 4
+         * Iteración 2: n = 4 → condición 4 < 6 ✅ → n++ = 5
+         * Iteración 3: n = 5 → condición 5 < 6 ✅ → n++ = 6
+         * Iteración 4: n = 6 → condición 6 < 6 ❌ → se detiene
+         * ➡️ Se ejecuta 3 veces, y n toma los valores: 4, 5, 6
+         */
+
+        //Estos dos ejemplos imrpimen los mismo aunque uno contenga preincremento y el otro postincremento.
+
+        /**
+         * Esto sucede por que el console.log() ya toma los valores almacenadas en la variable, cosa que se hizo en los dos casos,
+         * en el preincremento aunque la condicion sea falsa en elúltimo caso, la variable ya cambió de valor. Por eso se imprime
+         * 4,5,6.
+         * 
+         */
+
+        let n3 = 3;
+        while(++n3 < 6){
+            console.log(n3);//4, 5
+        }
+        
+
+        let n4 = 3;
+        while(n4++ < 6){
+            console.log(n4);//4, 5, 6
+        }
+    }
+
+
+}
 
