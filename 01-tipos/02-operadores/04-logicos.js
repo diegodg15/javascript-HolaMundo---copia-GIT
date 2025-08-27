@@ -67,6 +67,8 @@ Siempre que los operandos sean de tipo booleano, podemos ver fácilmente el valo
     console.log(!!nr); // -> false
     console.log(!!name); // -> true
 
+    /* Esto es ligeramente diferente para los operadores lógicos binarios (es decir, AND y OR). No devuelven un valor booleano. En realidad, devuelven su primer o segundo operando. El operador AND devolverá el primer operando si su resultado es falso, y el segundo en caso contrario. El operador OR devolverá su primer operando si su resultado es verdadero, y el segundo en caso contrario. La evaluación consiste simplemente en convertir un operando en un valor de tipo booleano (de nuevo, según las reglas aprendidas en el capítulo anterior). */
+
     console.log(true && 1991); // -> 1991
     console.log(false && 1991); // -> false
     console.log(2 && 5); // -> 5
@@ -86,4 +88,17 @@ Siempre que los operandos sean de tipo booleano, podemos ver fácilmente el valo
     console.log(x++ && y++); // -> 0
     console.log(x); // -> 1
     console.log(y); // -> y == 0
+}
+
+{/* 
+    Ambos operadores también utilizan la evaluación de cortocircuito .
+Entonces, si el primer operando de AND esFALSO, será devuelto y no se realizará ninguna otra verificación.
+Por el contrario, si el primer operando de OR esverdaderoSe devolverá y no se realizará ninguna otra comprobación. Esto acelera la ejecución del código, pero tiene un efecto secundario visible en este ejemplo: */
+
+    let x = 0;
+    let y = 0;
+    console.log(x++ && y++); // -> 0
+    console.log(x); // -> 1
+    console.log(y); // -> y == 0
+
 }
