@@ -110,7 +110,43 @@
     let palabra2 = "mundo";
     console.log(`${palabra1} ${palabra2}`);
 }
+{
+    //Concatenación de cadenas 
+    // Lee dos palabras y muéstralas juntas separadas por un espacio.
+    let palabra1 = "Hola";
+    let palabra2 = "Mundo";
+    const fraseCompleta = `${palabra1} ${palabra2}`;
 
+    console.log(fraseCompleta);
+}
+{
+    // Logitud de texto
+    // Calcula cuántos caracteres tiene un string.
+    let palabra = "Hola Mundo";
+    console.log(palabra.length);
+}
+{
+    // Saludo personalizado
+    // Pide al usuario su nombre usando prompt() y salúdalo
+    const nombreUsuario = prompt('Ingrese nombre');
+    console.log(`Saludos ${nombreUsuario}`);
+
+}
+{
+    //14. Comparación de dos números
+    // Lee dos números y muestra cuál es el mayor o si son iguales
+    let numero1 = parseFloat(prompt("Ingrese primer número:"));
+    let numero2 = parseFloat(prompt("Ingrese segundo número"));
+
+    if (numero1 > numero2) {
+        console.log(`El primer número es mayor ${numero1}`);
+    }else if(numero2 > numero1){
+        console.log(`El segundo número es mayor ${numero2}`);
+    }else{
+        console.log("Ambos números son iguales");
+    }
+
+}
 //--------------------------------------------
 
 
