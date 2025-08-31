@@ -14,4 +14,10 @@ console.log(a === 10);//False
 console.log(a !== 10);//False
 // Es recoemndable itulizar el doble comparaciíon.
 
+//------------------------------------------------------------------
+
+//OPERADORES DE COMPARACIÓN:
+
+/* Los operadores de comparación se utilizan para comprobar la igualdad o desigualdad de valores. Todos son binarios y devuelven un valor lógico que representa el resultado de la comparación.verdaderooFALSO.
+ */
 
