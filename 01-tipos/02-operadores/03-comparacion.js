@@ -10,14 +10,39 @@ console.log(a == 10);//True
 console.log(a != 10);//False
 console.log(a == "10");//True
 // El operador de doble igualdad solamente pregunta si los valores son iguales, no si los tipos son iguales.
-console.log(a === 10);//False
+console.log(a === 10);//True
 console.log(a !== 10);//False
-// Es recoemndable itulizar el doble comparaciíon.
+// Es recomendable y buena práctica utilizar la igualdad estricta ===.
+
+/**
+ * Sí, el comportamiento del operador == en JavaScript está directamente relacionado con que es un lenguaje de tipado débil. Y esto, a su vez, se relaciona con el concepto de tipado dinámico.
+
+Tipado Débil (Weak Typing)
+Un lenguaje de tipado débil permite que las variables cambien de tipo o que el intérprete intente realizar conversiones automáticas (coerción de tipo) cuando se realizan operaciones. JavaScript no requiere que declares el tipo de dato de una variable, y es muy flexible con los tipos de datos en las operaciones.
+
+Ejemplo de Tipado Débil:
+
+'5' + 1 resulta en '51'. JavaScript convierte el número 1 a un string para concatenarlo.
+
+'5' == 5 es true. El intérprete convierte el string '5' a un número para la comparación.
+
+En contraste, un lenguaje de tipado fuerte como Java o Python no permitiría estas conversiones automáticas. En esos lenguajes, intentar sumar un string y un número resultaría en un error.
+
+Tipado Dinámico (Dynamic Typing)
+Un lenguaje de tipado dinámico no requiere que declares el tipo de una variable de antemano. La variable puede contener cualquier tipo de dato y su tipo se determina y puede cambiar durante la ejecución del programa.
+
+Ejemplo de Tipado Dinámico:
+
+let variable = "hola"; // La variable es de tipo string
+variable = 10;          // Ahora la misma variable es de tipo number
+variable = true;        // Y ahora es de tipo boolean
+ */
+
 
 //------------------------------------------------------------------
 
 //OPERADORES DE COMPARACIÓN:
 
-/* Los operadores de comparación se utilizan para comprobar la igualdad o desigualdad de valores. Todos son binarios y devuelven un valor lógico que representa el resultado de la comparación.verdaderooFALSO.
+/* Los operadores de comparación se utilizan para comprobar la igualdad o desigualdad de valores. Todos son binarios y devuelven un valor lógico que representa el resultado de la comparación.verdadero o FALSO.
  */
 
