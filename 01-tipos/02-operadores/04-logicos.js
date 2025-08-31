@@ -100,5 +100,19 @@ Por el contrario, si el primer operando de OR esverdaderoSe devolverá y no se r
     console.log(x++ && y++); // -> 0
     console.log(x); // -> 1
     console.log(y); // -> y == 0
+}
+
+//OPOERADORES DE ASIGNACIÓN COMPUESTOS
+{
+    let a = true;
+    console.log(a); // -> true
+    a &&= false;
+    console.log(a); // -> false  
+}
+{
+    let a = true;
+    console.log(a); // -> true
+    a &&= false;
+    console.log(a); // -> false
 
 }

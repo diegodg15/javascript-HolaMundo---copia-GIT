@@ -543,14 +543,53 @@ console.log(prefixedUserName2);
 }
 
 //---------------------------------------------------
+//3.0.10 SECCIÓN PRÁCTICA
+/* Operadores aritméticos
+Ejercicio 1: Complete los operadores faltantes para obtener el resultado esperado (reemplace el símbolo de guión bajo con el operador apropiado): */
 
+/* console.log(2 _ 3 _ 1);      // expected 7  
+console.log(2 _ 4);          // expected 16  
+console.log(5 _ 1);          // expected 5  
+console.log(8 _ 2 _ 5 _ 2);   // expected 39
+ */
+{
+  console.log(2 * 3 + 1);
+  console.log(2 ** 4);
+  console.log(5 * 1);
+  console.log(8 ** 2 - 5 ** 2);
+}
 
+/* Operadores de comparación
+Ejercicio 2: Complete los operadores de comparación faltantes de tal manera que todas las expresiones resulten enverdadero(reemplace el símbolo de guión bajo con el operador apropiado): */
 
+/* console.log(4 * 5 _ 20);
+console.log(6 * 5 _ "30");
+console.log(-17 _ 0);  
+console.log(25 _ 1);  
+console.log(2 + 2 * 2 _ 4); */
+{
+  console.log(4 * 5 === 20);// Operador de comparación simple (igualdad débil/ loose equiality). Compara solo el valor de los operandos. Si los tipos de datos son diferentes, JavaScript intenta convertirlos a un tipo común antes de realizar la comparación. Esto se conoce como coerción de tipo.
+  console.log(6 * 5 == "30");// Operador de comparación estricto (igualdad estricta strict quiality). Compara tanto el valor como el tipo de dato de los operandos. Si los tipos de datos son diferentes, la comparación devuelve false de inmediato, sin intentar ninguna conversión. 
+  console.log(-17 < 0);
+  console.log(25 > 1);
+  console.log(2 + 2 * 2 != 4);
+}
+/* 
+Operadores lógicos
+Ejercicio 3: Complete los operadores de comparación faltantes de tal manera que todas las expresiones resulten enverdadero(reemplace el símbolo de guión bajo con el operador apropiado): */
+/* 
+console.log(true _ false);  
+console.log(false _ false);  
+console.log(false _ false _ true);  
+console.log(true _ false _ false && true);
+ */
 
-
-
-
-
+{
+  console.log(true || false);
+  console.log(false || ! false);
+  console.log(false || false || true);
+  console.log(true || false && false && true);
+}
 
 
 
