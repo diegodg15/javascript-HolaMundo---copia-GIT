@@ -4,6 +4,8 @@
          width="100">
 </a>
 
+<a text-decoration:none href="https://www.w3schools.com/js/js_intro.asp" target="_blank">Documentación JavaScript </a>
+
 # Fundamentos de JavaScript
 
 ### Este documento recoge los conceptos *esenciales y fundamentales* del lenguaje JavaScript, destinado a quienes desean consolidar sus bases en el desarrollo web. Se abordan desde la sintaxis básica hasta características clave del lenguaje, con ejemplos prácticos y explicaciones claras.
@@ -24,18 +26,18 @@ Variables (var, let, const)
 - Errores y depuración básica ✅
 
 > [!NOTE]
-> Índice referente a: Curso Cisco - JavaScript Essentials 1 (JSE) <br>
-> Objetivo: Aprender fundamentos de JS desde cero y prepararse para la certificación JSE – Certified Entry-Level JavaScript Programmer.
+> **Índice referente a:** Curso Cisco - JavaScript Essentials 1 (JSE) <br>
+> **Objetivo:** Aprender fundamentos de JS desde cero y prepararse para la certificación **JSE – Certified Entry-Level JavaScript Programmer**.
 >
-<details>
-  <sumary>Detalle curso Cisco:</sumary>
-Duración: 40 horas (modalidad en línea).
-Temas claves:
-    
-1. Variables, tipos de datos, operadores.
+> <details>
+> <summary>📜 Detalle curso Cisco</summary>
+> 
+> **Duración:** 40 horas (modalidad en línea).  
+> **Temas claves:**
+> 1. Variables, tipos de datos, operadores.  
+> 2. Funciones, condicionales, bucles.  
+> 3. Depuración y manejo de errores.
+> </details>
 
-2. Funciones, condicionales, bucles.
-
-3. Depuración y manejo de errores.
 
 <p align="center">&copy; DIEGO GUERRERO</p> 
