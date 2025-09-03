@@ -28,7 +28,11 @@ Variables (var, let, const)
 > [!NOTE]
 > **Índice referente a:** Curso Cisco - JavaScript Essentials 1 (JSE) <br>
 > **Objetivo:** Aprender fundamentos de JS desde cero y prepararse para la certificación **JSE – Certified Entry-Level JavaScript Programmer**.
->
+> <p align="center">
+>  <a href="https://www.netacad.com/courses/javascript-essentials-1?courseLang=en-US" target="_blank">
+>   Link curso Cisco
+> </a>
+></p>
 > <details>
 > <summary>📜 Detalle curso Cisco</summary>
 > 
@@ -37,6 +41,7 @@ Variables (var, let, const)
 > 1. Variables, tipos de datos, operadores.  
 > 2. Funciones, condicionales, bucles.  
 > 3. Depuración y manejo de errores.
+>
 > </details>
 
 
