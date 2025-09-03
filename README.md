@@ -26,16 +26,16 @@ Variables (var, let, const)
 > [!NOTE]
 > Índice referente a: Curso Cisco - JavaScript Essentials 1 (JSE) <br>
 > Objetivo: Aprender fundamentos de JS desde cero y prepararse para la certificación JSE – Certified Entry-Level JavaScript Programmer.
-
+>
 <details>
-  <sumary>Detalle cusrso Cisco:</sumary>
-  ### 🔹 Duración: 40 horas (modalidad en línea).
-🔹 Tem clave:
+  <sumary>Detalle curso Cisco:</sumary>
+Duración: 40 horas (modalidad en línea).
+Temas claves:
+    
+1. Variables, tipos de datos, operadores.
 
-Variables, tipos de datos, operadores.
+2. Funciones, condicionales, bucles.
 
-Funciones, condicionales, bucles.
-
-Depuración y manejo de errores.
+3. Depuración y manejo de errores.
 
 <p align="center">&copy; DIEGO GUERRERO</p> 
