@@ -45,6 +45,11 @@ variable = true;        // Y ahora es de tipo boolean
 
 /* Los operadores de comparación se utilizan para comprobar la igualdad o desigualdad de valores. Todos son binarios y devuelven un valor lógico que representa el resultado de la comparación.verdadero o FALSO.
  */
+
+//En la mayoría de los casos, JavaScript convierte los tipos a un número antes de la comparación (tipado débil). Hay dos excepciones: las cadenas y el operador de identidad (igualdad estricta).
+
+//Para comprobar si los operandos son iguales, podemos utilizar el operador de identidad (igualdad estricta)===o el operador de igualdad==.
+/**La diferencia radica en que la comparación débil (==), compara solo el valor de la variable. En cambio la comparación estricta (===) compara no solo el valor, sino también el tipo de dato de la variable.*/
 {
     console.log(10 === 5); // -> false
     console.log(10 === 10); // -> true
@@ -55,7 +60,11 @@ variable = true;        // Y ahora es de tipo boolean
     console.log(0 === false); // -> false
     console.log(undefined === false); // -> false
 }
+//El primero es más restrictivo y para que devuelva verdadero, los operandos deben ser idénticos (es decir, deben ser iguales y del mismo tipo).
 
+
+//------------------------------------------------------------------
+/**Tenga en cuenta que si alguno de los operandos tiene un NaN valor (o se ha convertido a NaN, por ejemplo con indefinido), el operador de igualdad devolverá FALSO. */
 {
     console.log(10 == 5); // -> false
     console.log(10 == 10); // -> true
@@ -68,6 +77,9 @@ variable = true;        // Y ahora es de tipo boolean
     console.log(NaN == NaN); // -> false
 }
 
+//------------------------------------------------------------------
+/**También existen operadores complementarios a los que acabamos de demostrar: el operador de no identidad!==y el operador de desigualdad!=. Los primeros retornosverdaderoSi los operandos no son idénticos, es decir, son iguales pero de tipos diferentes, o simplemente son diferentes. El segundo devuelveverdaderosi los operandos son diferentes.
+ */
 {
     console.log(10 !== 5); // -> true
     console.log(10 !== 10); // -> false
@@ -88,6 +100,9 @@ variable = true;        // Y ahora es de tipo boolean
     console.log(NaN != NaN); // -> true
 }
 
+//------------------------------------------------------------------
+/*También tenemos operadores que nos permiten comprobar si uno de los operandos es mayor que>, más pequeño que<, mayor o igual a>=, y menor o igual que<=Estos operadores funcionan en cualquier tipo de operando, pero tiene sentido usarlos solo en números o valores que se convertirán correctamente a números.
+*/
 {
     console.log(10 > 100); // -> false
     console.log(101 > 100); // -> true
@@ -116,3 +131,5 @@ variable = true;        // Y ahora es de tipo boolean
 
     console.log("ab" < "ab4"); // -> true
 }
+//Nota: el símbolo=>Existe en JavaScript, pero no es un operador: lo usamos en la construcción de funciones de flecha.
+
