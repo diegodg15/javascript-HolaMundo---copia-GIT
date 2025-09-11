@@ -17,7 +17,7 @@
 
 //OPERADORES DE ASIGNACIÓ COMPUESTOS:
 
-/* Probablemente pueda adivinar que este operador también puede usarse junto con el operador de reemplazo. Su funcionamiento es tan intuitivo que nos detendremos en un ejemplo sencillo: */
+/* Este operador también puede usarse junto con el operador de reemplazo. Su funcionamiento es tan intuitivo que nos detendremos en un ejemplo sencillo: */
 
 {
     let sentence = "Happy New ";
