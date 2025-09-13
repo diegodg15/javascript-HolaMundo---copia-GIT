@@ -12,8 +12,8 @@ let personaje = {//Objeto literal
 console.log(personaje);
 console.log(personaje.nombre);
 console.log(personaje["nombrePelicula"]);
-console.log(`La edad es ${personaje["edad"]}`)
-
+console.log(`La edad es ${personaje["edad"]}`);
+console.log(`lA EDAD ES : ${personaje.edad}`);
 //Cambiar porpiedad a objeto
 
 personaje.edad = 10;
@@ -27,8 +27,8 @@ console.log(personaje);
 
 //--------------------------------
 /**En JavaScript, existen varias maneras de crear objetos, pero la más sencilla y rápida es usar el literal de llave. */
-let  testObj1  =  {};
-console.log(typeof  testObj);  //  ->  object
+let testObj1 = {};
+console.log(typeof testObj);  //  ->  object
 
 let testObj = {
     nr: 600,

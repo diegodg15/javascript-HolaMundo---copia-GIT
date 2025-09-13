@@ -10,14 +10,16 @@ let nombre_completo;//snake_case
 
 //UPPER_SNAKE_CASE: valores constantes o globales.
 const VALOR_DE_PI = 3.14;
+const VALOR_PI_METODO = Math.PI;
 
 //PascalCase/UpperCamelCase: clases y constructores.
-class TrianguloRectangulo {
-    constructor(alto, ancho) {
+class TrianguloRectangulo {//clase que define plantilla para crear objetos. Este concepto de clases y objetos es en POO.
+    constructor(alto, ancho) {//constructor para crear objetos 
         this.alto = alto;
         this.ancho = ancho;
     }
 }
+
 //--------------------------------------------
 
 //Decalración de varias variabes en una línea
