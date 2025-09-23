@@ -58,6 +58,11 @@ variable = true;        // Y ahora es de tipo boolean
     console.log("10" === "10"); // -> true
     console.log("Alice" === "Bob"); // -> false
     console.log(0 === false); // -> false
+    {
+        Boolean(0); // false aquí se fuerza a que el 0 se convierta en boolean, lo cual es false y 1 es true.
+        //JavaScript tiene reglas para convertir valores a true o false (truthy/falsy). 0, "", null, undefined, NaN → todos son falsy.
+
+    }
     console.log(undefined === false); // -> false
 }
 //El primero es más restrictivo y para que devuelva verdadero, los operandos deben ser idénticos (es decir, deben ser iguales y del mismo tipo).
