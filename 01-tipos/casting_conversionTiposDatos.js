@@ -155,7 +155,7 @@ console.log(Number(null));//  ->  0
 
 let textoNumero = "123ABC";
 let textoConvertido = parseInt(textoNumero);
-console.log(`${textoConvertido}`);//Number 123 parseInt convierte una cadena de texto en numero solo los digitos, hasta el último.
+console.log(`${textoConvertido}`);//Number 123 parseInt convierte una cadena de texto en número solo los digitos, hasta el último.
 
 //De BigInt a Number se pierde precisión
 const big = 12345678901234567890n;

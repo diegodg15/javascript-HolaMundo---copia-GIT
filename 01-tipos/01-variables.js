@@ -24,6 +24,7 @@ class TrianguloRectangulo {//clase que define plantilla para crear objetos. Este
 
 //Decalración de varias variabes en una línea
 let valoresVarios = 1, valoresVarios2 = 2, valoresVarios3 = 3;
+console.log(valoresVarios, valoresVarios2);
 
 //>>>>>>>>>TIPOS DE VARIABLES<<<<<<<<<<
 
@@ -52,14 +53,20 @@ console.log("La variable es : " + variableDeImpresion);//Concatenación
 console.log("La variable es : ", variableDeImpresion);
 console.log("La variable es : ", variableDeImpresion, "más texto");
 console.log(`La variable es: '\n'${variableDeImpresion}`)
+console.log("hola  \"mundo\"");//hola "mundo"
+{
+    let numero = "2";
+    let msg = "saludos";
+    console.log(numero.concat(" " + msg))
+}
 //INTEPOLACIÓN:
 {
-const nombre = "Diego";
-const edad = 24;
-{
-    let mensaje = `Mi nombre es ${nombre} y mi tengo ${edad} años`;
-    console.log(mensaje);
-}
+    const nombre = "Diego";
+    const edad = 24;
+    {
+        let mensaje = `Mi nombre es ${nombre} y mi tengo ${edad} años`;
+        console.log(mensaje);
+    }
 }
 
 //Tipos de impresión console.log con saltos de líneas

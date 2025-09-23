@@ -140,12 +140,80 @@
 
     if (numero1 > numero2) {
         console.log(`El primer número es mayor ${numero1}`);
-    }else if(numero2 > numero1){
+    } else if (numero2 > numero1) {
         console.log(`El segundo número es mayor ${numero2}`);
-    }else{
+    } else {
         console.log("Ambos números son iguales");
     }
 
+}
+
+//15. Calculadora básica
+{
+    let numero1 = 2;
+    let numero2 = 3;
+
+    const OPERACION_SUMA = numero1 + numero2;
+    const OPERACION_RESTA = numero1 - numero2;
+    const OPERACION_MULTIPLICACION = numero1 * numero2;
+    const OPERACION_DIVISION = numero1 / numero2;
+    const CONVERSION_DIVISION = parseFloat(OPERACION_DIVISION.toFixed(2));//es lo mismo que solo OPERACION_DIVISION.toFixed(2);
+
+    console.log(OPERACION_SUMA);
+    console.log(OPERACION_RESTA);
+    console.log(OPERACION_MULTIPLICACION);
+    console.log(OPERACION_DIVISION);
+    console.log(CONVERSION_DIVISION);
+}
+
+//16. Positivo, negativo o cero
+{
+    let valor = parseInt(prompt("ingresa un numero"));
+    if (valor > 0) {
+        console.log("El valor es positivo");
+    } else if (valor < 0) {
+        console.log("El valor es negativo");
+    } else {
+        console.log("El valor es cero");
+    }
+}
+
+//17. Año bisiesto
+{
+
+}
+
+//18. Ciclo for del 1 al 10
+{
+    for (let i = 1; i <= 10; i++) {
+        console.log(i);
+    }
+}
+
+//19. Suma de los primeros N naturales
+{
+    let sumaAcumulada = 0;
+    for (let i = 1; i <= 4; i++) {
+        sumaAcumulada += i;
+    }
+    console.log(sumaAcumulada);
+
+    //tambien se puede utilizar la formula de la sumatoria:
+    let numero = 4;
+    const FORMULA_SUMATORIA = ([numero * (numero + 1)] / 2);
+    console.log(FORMULA_SUMATORIA);
+}
+
+//20. Bucle while con condición de salida
+{
+    let total = 0;
+    let entrada;
+
+    while ((entrada = parseFloat(prompt('Ingresa un número (0 para salir):'))) !== 0) {
+        total += entrada;
+    }
+
+    console.log('Suma acumulada:', total);
 }
 //--------------------------------------------
 
