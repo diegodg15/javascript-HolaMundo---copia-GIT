@@ -9,58 +9,130 @@
     <title>Mini crud</title>
 </head>
 
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+
+    input {
+        padding: 6px;
+        width: 250px;
+    }
+
+    button {
+        padding: 6px 10px;
+        margin-left: 6px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 12px;
+        max-width: 400px;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px;
+        border: 1px solid #ddd;
+        margin-bottom: 6px;
+        background: #fafafa;
+    }
+
+    li.slide-out {
+        animation: slideOut 0.35s forwards;
+    }
+
+    @keyframes slideOut {
+        to {
+            opacity: 0;
+            transform: translateX(80%);
+            height: 0;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    button.delete {
+        margin-left: auto;
+        background: #ff5555;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+
 <body>
-    <main class="main-body">
-        <section>
-            <header>
-                <div>
-                    <h1>Mi lista interactiva</h1>
 
-                    <input type="text" id="input" placeholder="Agregar nueva tarea...">
-                    <button class="addButton">Agregar</button>
+    <h1>Mi lista interactiva</h1>
 
-                    <ul name="list">
-                        <li>tarea 1</li>
-                    </ul>
+    <input type="text" id="input" placeholder="Agregar nueva tarea...">
+    <button id="addButton" type="button">Agregar</button>
 
-
-                </div>
-        </section>
-        </header>
-    </main>
+    <ul id="lista">
+        <li><span>tarea 1</span><button class="delete" type="button">Eliminar</button></li>
+    </ul>
 
     <script>
-        const input = document.getElementById("input");
-        const addButton = document.getElementsByClassName("addButton")[0];
-        const list = document.getElementsByName("list")[0];
+        const input = document.getElementById('input');
+        const addButton = document.getElementById('addButton');
+        const lista = document.getElementById('lista');
 
         function addTask() {
-            const textInput = input.value.trim();
+            const text = input.value.trim();
+            if (!text) return;
 
-            if (textInput !== "") {
-                const newTask = document.createElement("li");
-                newTask.textContent = textInput;
+            const li = document.createElement('li');
+            const span = document.createElement('span');
+            span.textContent = text;
 
-                const deleteButton = document.createElement("button");
-                deleteButton.textContent = "eliminar";
+            const deleteButton = document.createElement('button');
+            deleteButton.type = 'button'; // importante para que no actúe como submit
+            deleteButton.className = 'delete';
+            deleteButton.textContent = 'Eliminar';
 
-                deleteButton.onclick = function () {
-                    newTask.style.animation = "slideOut 0.5s forwards";
+            li.appendChild(span);
+            li.appendChild(deleteButton);
+            lista.appendChild(li);
 
-                    newTask.addEventListener("animationend", function () {
-                        list.removeChild(newTask);
-                    });
-                };
-
-                newTask.appendChild(deleteButton);
-                list.appendChild(newTask);
-
-                input.value = "";
-            }
+            input.value = '';
+            input.focus();
         }
 
-        addButton.addEventListener("click", addTask);
+        // Delegación: un solo listener en la UL para manejar todos los botones eliminar
+        lista.addEventListener('click', (e) => {
+            if (e.target.matches('button.delete')) {
+                const li = e.target.closest('li');
+                if (!li) return;
+
+                // Intentamos animar y luego eliminar
+                li.classList.add('slide-out');
+
+                const onEnd = () => {
+                    li.remove();
+                    li.removeEventListener('animationend', onEnd);
+                };
+                li.addEventListener('animationend', onEnd);
+
+                // Fallback: por si la animación no existe o no se dispara
+                setTimeout(() => {
+                    if (document.body.contains(li)) li.remove();
+                }, 450);
+            }
+        });
+
+        addButton.addEventListener('click', addTask);
+
+        // Permitir Enter para agregar
+        input.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') addTask();
+        });
     </script>
+
 </body>
 
 </html>
