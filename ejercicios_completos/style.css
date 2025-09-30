@@ -1,0 +1,7 @@
+*{
+    --colorFondo : rgb(241, 241, 241);
+}
+
+body{
+    background-color: var(--colorFondo);
+}

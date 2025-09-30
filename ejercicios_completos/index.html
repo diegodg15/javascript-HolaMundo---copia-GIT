@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mini ejercio de programación Js">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mini crud</title>
+</head>
+
+<body>
+    <main class="main-body">
+        <section>
+            <header>
+                <div>
+                    <h1>Mi lista interactiva</h1>
+
+                    <input type="text" id="input" placeholder="Agregar nueva tarea...">
+                    <button class="addButton">Agregar</button>
+
+                    <ul name="list">
+                        <li>tarea 1</li>
+                    </ul>
+
+
+                </div>
+        </section>
+        </header>
+    </main>
+
+    <script>
+        const input = document.getElementById("input");
+        const addButton = document.getElementsByClassName("addButton")[0];
+        const list = document.getElementsByName("list")[0];
+
+        function addTask() {
+            const textInput = input.value.trim();
+
+            if (textInput !== "") {
+                const newTask = document.createElement("li");
+                newTask.textContent = textInput;
+
+                const deleteButton = document.createElement("button");
+                deleteButton.textContent = "eliminar";
+
+                deleteButton.onclick = function () {
+                    newTask.style.animation = "slideOut 0.5s forwards";
+
+                    newTask.addEventListener("animationend", function () {
+                        list.removeChild(newTask);
+                    });
+                };
+
+                newTask.appendChild(deleteButton);
+                list.appendChild(newTask);
+
+                input.value = "";
+            }
+        }
+
+        addButton.addEventListener("click", addTask);
+    </script>
+</body>
+
+</html>

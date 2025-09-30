@@ -19,6 +19,6 @@
     miAuto.mostrarInfo(); // Marca: Toyota, Modelo: Corolla
 
     console.log(miAuto.marca);    // ✅ "Toyota"
-    console.log(miAuto.#modelo);  // ❌ Error: campo privado
+    // console.log(miAuto.#modelo);  // ❌ Error: campo privado
 
 }
