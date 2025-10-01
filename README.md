@@ -8,7 +8,7 @@
 
 # Fundamentos de JavaScript
 
-### Este documento creado por mí recoge los conceptos *esenciales y fundamentales* del lenguaje JavaScript, destinado a quienes desean consolidar sus bases en el desarrollo web. Se abordan desde la sintaxis básica hasta características clave del lenguaje, con ejemplos prácticos y explicaciones claras.
+### Este documento recoge los conceptos *esenciales y fundamentales* del lenguaje JavaScript, destinado a quienes desean consolidar sus bases en el desarrollo web. Se abordan desde la sintaxis básica hasta características clave del lenguaje, con ejemplos prácticos y explicaciones claras.
 `const msg = "Hola mundo, Javascript"; `
 `console.log(msg);`
 
